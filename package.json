@@ -1,0 +1,31 @@
+{
+  "name": "SevenTech-Ecommerce-Template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
+  },
+  "scripts": {
+    "tw-build": "npx tailwindcss -i ./dist/css/tailwindstart.css -o ./dist/css/tailwind.css",
+    "sass": "sass --watch ./dist/scss/index.scss:./dist/css/index.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MRJAHID/SevenTech-Ecommerce-Template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MRJAHID/SevenTech-Ecommerce-Template/issues"
+  },
+  "homepage": "https://github.com/MRJAHID/SevenTech-Ecommerce-Template#readme"
+}
