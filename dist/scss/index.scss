@@ -2,6 +2,7 @@
 @import './abstract/variables';
 @import './abstract/mixin';
 @import './abstract/global';
+@import './abstract/small';
 
 // pages
 @import './pages/home';
@@ -13,6 +14,7 @@
 @import './layouts/hero';
 @import './layouts/productpanel';
 @import './layouts/upcoming';
+@import './layouts/footer';
 
 // Components
 @import './components/product';
