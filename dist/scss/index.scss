@@ -6,6 +6,7 @@
 
 // pages
 @import './pages/home';
+@import './pages/wishlist';
 
 // layouts
 @import './layouts/topheader';
@@ -18,3 +19,4 @@
 
 // Components
 @import './components/product';
+@import './components/breadcrumb';
