@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Wishlist | Seven Tech</title>
+        <title>Invoice | Seven Tech</title>
         <!-- Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -169,267 +169,188 @@
         </header>
         <!-- ******** Header END ******** -->
 
-        <!-- ******** Breadcrumb START ******** -->
-        <div class="container px-2 py-6 mx-auto breadcrumb-wrapper">
-            <ol class="breadcrumbs breadcrumbs--one">
-                <li>
-                    <a class="breadcrumb" href="#">
-                        <span itemprop="name">
-                            <i class="pr-1 fas fa-home"></i>
-                            <span>Home</span>
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a class="breadcrumb" href="#">
-                        <span itemprop="name">
-                            <i class="pr-1 fas fa-anchor fa-sm"></i>
-                            <span>Jane Doe</span>
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <span class="breadcrumb">
-                        <span itemprop="name">Details</span>
-                    </span>
-                </li>
-            </ol>
-        </div>
-        <!-- ******** Breadcrumb END ******** -->
+        <!-- ******** Invoice START ******** -->
+        <main class="my-20 shadow-lg invoice">
+            <div class="container mx-auto">
+                <div class="invoice__wrapper">
+                    <!-- Invoice Header -->
+                    <div class="flex items-center justify-between px-6 my-12 invoice__header">
+                        <picture class="invoice__logo">
+                            <img src="./dist/img/logo.png" class="w-36" alt="Invoice Logo" />
+                        </picture>
+                        <div class="invoice__title">
+                            <h1 class="text-5xl font-bold text-gray-800">INVOICE</h1>
+                        </div>
+                    </div>
 
-        <!-- ******** Wishlist START ******** -->
-        <main class="my-10 wishlist">
-            <div class="container px-2 mx-auto">
-                <div class="wishlist__wrapper">
-                    <h2 class="mb-6 text-3xl font-normal text-gray-800">Your wishlist items</h2>
-                    <table class="min-w-full table-auto">
-                        <thead class="justify-between">
-                            <tr class="bg-gray-800">
-                                <th class="px-6 py-2">
-                                    <span class="text-sm text-gray-300 capitalize">IMAGE</span>
-                                </th>
-                                <th class="px-6 py-2 text-left">
-                                    <span class="text-sm text-gray-300 capitalize"
-                                        >PRODUCT NAME</span
-                                    >
-                                </th>
-                                <th class="px-6 py-2">
-                                    <span class="text-sm text-gray-300 capitalize">MODEL</span>
-                                </th>
-                                <th class="px-6 py-2">
-                                    <span class="text-sm text-gray-300 capitalize">STOCK</span>
-                                </th>
-                                <th class="px-6 py-2">
-                                    <span class="text-sm text-gray-300 capitalize">PRICE</span>
-                                </th>
-                                <th class="px-6 py-2">
-                                    <span class="text-sm text-gray-300 capitalize">ACTION</span>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody class="bg-gray-200">
-                            <tr class="bg-white border-2 border-gray-200">
-                                <td class="flex items-center px-3 py-2">
-                                    <img
-                                        class="object-cover w-12 h-12 mx-auto rounded"
-                                        src="https://www.techlandbd.com/image/cache/catalog/Laptop/ASUS/Rog/g15-g513qm/black/asus-rog-strix-g15-g513qm-black-laptop-1-250x250.jpg"
-                                        alt="Product Image"
-                                    />
-                                </td>
-                                <td class="px-3 py-2">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >AMD Ryzen 3 3300X 4 Core 8 Thread AM4 Processor</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >Ryzen 3 3300X</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-green-500"
-                                        >In Stock</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >14,400৳</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2">
-                                    <div class="flex items-center justify-center">
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 mr-2 text-white bg-blue-500 rounded  hover:text-white hover:bg-gray-800"
-                                            title="Remove from wishlist"
-                                        >
-                                            <i class="fas fa-cart-arrow-down fa-xs"></i>
-                                        </a>
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 text-white bg-red-400 rounded  hover:text-white hover:bg-red-600"
-                                            title="Remove from wishlist"
-                                        >
-                                            <i class="fas fa-trash-alt fa-xs"></i>
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="bg-white border-2 border-gray-200">
-                                <td class="flex items-center px-3 py-2">
-                                    <img
-                                        class="object-cover w-12 h-12 mx-auto rounded"
-                                        src="https://www.techlandbd.com/image/cache/catalog/Processor/AMD/Ryzen%203/amd_ryzen_3_3300x_quad_core-2-90x90.jpg"
-                                        alt="Product Image"
-                                    />
-                                </td>
-                                <td class="px-3 py-2">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >AMD Ryzen 3 3300X 4 Core 8 Thread AM4 Processor</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >Ryzen 3 3300X</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-green-500"
-                                        >In Stock</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >14,400৳</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2">
-                                    <div class="flex items-center justify-center">
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 mr-2 text-white bg-blue-500 rounded  hover:text-white hover:bg-gray-800"
-                                            title="Add to cart"
-                                        >
-                                            <i class="fas fa-cart-arrow-down fa-xs"></i>
-                                        </a>
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 text-white bg-red-400 rounded  hover:text-white hover:bg-red-600"
-                                            title="Remove from wishlist"
-                                        >
-                                            <i class="fas fa-trash-alt fa-xs"></i>
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="bg-white border-2 border-gray-200">
-                                <td class="flex items-center px-3 py-2">
-                                    <img
-                                        class="object-cover w-12 h-12 mx-auto rounded"
-                                        src="https://www.techlandbd.com/image/cache/catalog/Laptop/ASUS/Tuf/dash-f15-fx516pm/grey/asus-tuf-dash-f15-fx516pm-black-2-250x250.jpg"
-                                        alt="Product Image"
-                                    />
-                                </td>
-                                <td class="px-3 py-2">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >AMD Ryzen 3 3300X 4 Core 8 Thread AM4 Processor</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >Ryzen 3 3300X</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-green-500"
-                                        >In Stock</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >14,400৳</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2">
-                                    <div class="flex items-center justify-center">
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 mr-2 text-white bg-blue-500 rounded  hover:text-white hover:bg-gray-800"
-                                            title="Add to cart"
-                                        >
-                                            <i class="fas fa-cart-arrow-down fa-xs"></i>
-                                        </a>
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 text-white bg-red-400 rounded  hover:text-white hover:bg-red-600"
-                                            title="Remove from wishlist"
-                                        >
-                                            <i class="fas fa-trash-alt fa-xs"></i>
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="bg-white border-2 border-gray-200">
-                                <td class="flex items-center px-3 py-2">
-                                    <img
-                                        class="object-cover w-12 h-12 mx-auto rounded"
-                                        src="https://www.techlandbd.com/image/cache/catalog/Laptop/ASUS/Rog/g15-g513qm/black/asus-rog-strix-g15-g513qm-black-laptop-1-250x250.jpg"
-                                        alt="Product Image"
-                                    />
-                                </td>
-                                <td class="px-3 py-2">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >AMD Ryzen 3 3300X 4 Core 8 Thread AM4 Processor</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >Ryzen 3 3300X</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-green-500"
-                                        >In Stock</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >14,400৳</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2">
-                                    <div class="flex items-center justify-center">
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 mr-2 text-white bg-blue-500 rounded  hover:text-white hover:bg-gray-800"
-                                            title="Remove from wishlist"
-                                        >
-                                            <i class="fas fa-cart-arrow-down fa-xs"></i>
-                                        </a>
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 text-white bg-red-400 rounded  hover:text-white hover:bg-red-600"
-                                            title="Remove from wishlist"
-                                        >
-                                            <i class="fas fa-trash-alt fa-xs"></i>
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <!-- Invoice No & Date -->
+                    <div class="flex items-center justify-between my-4 invoice__dateno">
+                        <div class="w-1/2 invoice__dateno--no">
+                            <p class="py-2 pl-6 text-lg">Invoice# 52147</p>
+                        </div>
+                        <div class="w-1/2 pr-6 invoice__dateno--date">
+                            <p class="text-lg text-gray-800"><b>Date: </b> 17 / 06 / 2021</p>
+                        </div>
+                    </div>
 
-                    <div class="w-full my-8 text-right">
-                        <a
-                            href="cart.html"
-                            class="px-3 py-2 text-sm font-semibold text-white bg-blue-500  hover:bg-gray-800 hover:text-white"
-                            >CONTINUE <i class="pl-1 fas fa-long-arrow-alt-right"></i
-                        ></a>
+                    <!-- Invoice To -->
+                    <div class="flex items-start px-6 my-6 invoice__to">
+                        <div class="">
+                            <strong class="text-xl text-gray-800">Invoice To: &nbsp;</strong>
+                        </div>
+                        <div class="flex flex-col invoice__to--info">
+                            <span class="text-lg text-gray-800"><b>Ashik Rahaman</b></span>
+                            <span class="text-base text-gray-800"
+                                >Mirpur 1, Darus Salam Road, Dhaka, Bangladesh</span
+                            >
+                            <span class="text-base text-gray-800">01875748596</span>
+                        </div>
+                    </div>
+
+                    <!-- Invoice Table -->
+                    <div class="px-6 mt-6 mb-10 invoice__table">
+                        <div class="">
+                            <table class="w-full table-auto">
+                                <thead>
+                                    <tr>
+                                        <th
+                                            style="background: #005dab"
+                                            class="px-3 py-2 text-white"
+                                        >
+                                            Sl
+                                        </th>
+                                        <th
+                                            style="background: #005dab"
+                                            class="px-3 py-2 text-white rounded-r-3xl"
+                                        >
+                                            Product
+                                        </th>
+                                        <th class="px-3 py-2 text-gray-800">Price</th>
+                                        <th class="px-3 py-2 text-gray-800">Qty</th>
+                                        <th class="px-3 py-2 text-gray-800">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b border-gray-300">
+                                        <td class="px-1 py-2 text-center text-gray-800">1</td>
+                                        <td class="px-1 py-2 text-left text-gray-800">
+                                            Floral Printed Designer Ready Saree
+                                        </td>
+                                        <td class="px-1 py-2 text-center text-gray-800">$40</td>
+                                        <td class="px-1 py-2 text-center text-gray-800">2</td>
+                                        <td class="px-1 py-2 text-center text-gray-800">$80</td>
+                                    </tr>
+                                    <tr class="border-b border-gray-300">
+                                        <td class="px-1 py-2 text-center text-gray-800">2</td>
+                                        <td class="px-1 py-2 text-left text-gray-800">
+                                            Maroon Turtle Neck Bodycon
+                                        </td>
+                                        <td class="px-1 py-2 text-center text-gray-800">$40</td>
+                                        <td class="px-1 py-2 text-center text-gray-800">2</td>
+                                        <td class="px-1 py-2 text-center text-gray-800">$80</td>
+                                    </tr>
+                                    <tr class="border-b border-gray-300">
+                                        <td class="px-1 py-2 text-center text-gray-800">3</td>
+                                        <td class="px-1 py-2 text-left text-gray-800">
+                                            Koti Style Full Sequins Work Designer Party Lehenga
+                                        </td>
+                                        <td class="px-1 py-2 text-center text-gray-800">$40</td>
+                                        <td class="px-1 py-2 text-center text-gray-800">2</td>
+                                        <td class="px-1 py-2 text-center text-gray-800">$80</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Invoice Subtotal -->
+                    <div class="flex items-start px-6 my-5 invoice__info">
+                        <div class="flex flex-col w-1/2 pr-3">
+                            <div class="mb-4">
+                                <h2 class="mb-1 text-lg font-semibold text-gray-800">
+                                    Payment Info
+                                </h2>
+                                <div class="flex flex-col text-gray-800">
+                                    <div class="flex">
+                                        <p class="w-1/3 text-sm"><b>Account:</b></p>
+                                        <p class="w-2/3 text-sm">515151555515158</p>
+                                    </div>
+                                    <div class="flex">
+                                        <p class="w-1/3 text-sm"><b>A/C Name:</b></p>
+                                        <p class="w-2/3 text-sm">Ashik Rahaman</p>
+                                    </div>
+                                    <div class="flex">
+                                        <p class="w-1/3 text-sm"><b>Payment Mothod:</b></p>
+                                        <p class="w-2/3 text-sm">Mobile Bkash</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col text-gray-800">
+                                <h2 class="mb-1 text-lg font-semibold">Terms & Condition</h2>
+                                <p class="text-sm">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Reprehenderit exercitationem, vel quasi fugit aliquam dicta
+                                    iusto! Accusamus itaque dicta animi eligendi?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w-1/2 pl-10 invoice__subtotal">
+                            <div class="flex flex-col">
+                                <div
+                                    class="flex justify-between pl-24 pr-6 mb-3 text-base font-semibold text-gray-800 "
+                                >
+                                    <h4>Total</h4>
+                                    <h4>$220.0</h4>
+                                </div>
+                                <div
+                                    class="flex justify-between pl-24 pr-6 mb-3 text-base font-semibold text-gray-800 "
+                                >
+                                    <h4>Tax</h4>
+                                    <h4>$10.0</h4>
+                                </div>
+                                <div
+                                    class="flex justify-between pl-24 pr-6 mb-3 text-base font-semibold text-gray-800 "
+                                >
+                                    <h4>Shipping Charge</h4>
+                                    <h4>$22.0</h4>
+                                </div>
+                                <div
+                                    style="background: #005dab; color: #fff"
+                                    class="flex justify-between pl-24 pr-6 mb-3 text-base font-semibold text-gray-800 "
+                                >
+                                    <h4>Sub Total</h4>
+                                    <h4>$590.0</h4>
+                                </div>
+                            </div>
+
+                            <div class="float-right mt-10">
+                                <img
+                                    class="w-20 mx-auto"
+                                    src="./dist/img/signature-invoice.png"
+                                    alt="Authorised Signature"
+                                />
+                                <h4
+                                    class="pt-1 mt-1 text-base font-semibold text-gray-800 border-t border-gray-600 "
+                                >
+                                    Authorised Sign
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Invoice Footer -->
+                    <div class="flex items-center justify-between my-1 invoice__footer">
+                        <div class="w-1/2">
+                            <h4 class="py-1 pl-6 text-base font-semibold">
+                                Thanks For Shop With Us!
+                            </h4>
+                        </div>
+                        <div class="w-1/2"></div>
                     </div>
                 </div>
             </div>
         </main>
-        <!-- ******** Wishlist END ******** -->
+        <!-- ******** Invoice END ******** -->
 
         <!-- ******** Footer START ******** -->
         <footer class="mt-20 mb-8 footer">

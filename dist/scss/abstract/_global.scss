@@ -50,9 +50,11 @@ ol {
     list-style: none;
 }
 input:focus,
+select:focus,
 textarea:focus {
     outline: none;
-    border: 1px solid $primary-color;
+    border: 1px solid $primary-color !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .color-yellow {

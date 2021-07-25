@@ -1,0 +1,25 @@
+.orderhistory {
+    &__item {
+        border-radius: 7px;
+        border: 1px solid $smoke;
+        &--header {
+            padding: 1rem 2rem;
+            border-bottom: 1px solid $smoke;
+        }
+        &--bottom {
+            padding: 1rem 2rem;
+            img {
+                width: 4.5rem;
+                margin-right: 1rem;
+            }
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .button {
+                background-color: $primary-color;
+                @include hoverbtncolor;
+                width: 4rem;
+            }
+        }
+    }
+}

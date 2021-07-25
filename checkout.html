@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Wishlist | Seven Tech</title>
+        <title>Checkout | Seven Tech</title>
         <!-- Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -184,252 +184,287 @@
                     <a class="breadcrumb" href="#">
                         <span itemprop="name">
                             <i class="pr-1 fas fa-anchor fa-sm"></i>
-                            <span>Jane Doe</span>
+                            <span>SevenTech</span>
                         </span>
                     </a>
                 </li>
                 <li>
                     <span class="breadcrumb">
-                        <span itemprop="name">Details</span>
+                        <span itemprop="name">Checkout</span>
                     </span>
                 </li>
             </ol>
         </div>
         <!-- ******** Breadcrumb END ******** -->
 
-        <!-- ******** Wishlist START ******** -->
-        <main class="my-10 wishlist">
+        <!-- ******** checkout START ******** -->
+        <main class="my-10 checkout">
             <div class="container px-2 mx-auto">
-                <div class="wishlist__wrapper">
-                    <h2 class="mb-6 text-3xl font-normal text-gray-800">Your wishlist items</h2>
-                    <table class="min-w-full table-auto">
-                        <thead class="justify-between">
-                            <tr class="bg-gray-800">
-                                <th class="px-6 py-2">
-                                    <span class="text-sm text-gray-300 capitalize">IMAGE</span>
-                                </th>
-                                <th class="px-6 py-2 text-left">
-                                    <span class="text-sm text-gray-300 capitalize"
-                                        >PRODUCT NAME</span
-                                    >
-                                </th>
-                                <th class="px-6 py-2">
-                                    <span class="text-sm text-gray-300 capitalize">MODEL</span>
-                                </th>
-                                <th class="px-6 py-2">
-                                    <span class="text-sm text-gray-300 capitalize">STOCK</span>
-                                </th>
-                                <th class="px-6 py-2">
-                                    <span class="text-sm text-gray-300 capitalize">PRICE</span>
-                                </th>
-                                <th class="px-6 py-2">
-                                    <span class="text-sm text-gray-300 capitalize">ACTION</span>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody class="bg-gray-200">
-                            <tr class="bg-white border-2 border-gray-200">
-                                <td class="flex items-center px-3 py-2">
-                                    <img
-                                        class="object-cover w-12 h-12 mx-auto rounded"
-                                        src="https://www.techlandbd.com/image/cache/catalog/Laptop/ASUS/Rog/g15-g513qm/black/asus-rog-strix-g15-g513qm-black-laptop-1-250x250.jpg"
-                                        alt="Product Image"
-                                    />
-                                </td>
-                                <td class="px-3 py-2">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >AMD Ryzen 3 3300X 4 Core 8 Thread AM4 Processor</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >Ryzen 3 3300X</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-green-500"
-                                        >In Stock</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >14,400৳</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2">
-                                    <div class="flex items-center justify-center">
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 mr-2 text-white bg-blue-500 rounded  hover:text-white hover:bg-gray-800"
-                                            title="Remove from wishlist"
-                                        >
-                                            <i class="fas fa-cart-arrow-down fa-xs"></i>
-                                        </a>
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 text-white bg-red-400 rounded  hover:text-white hover:bg-red-600"
-                                            title="Remove from wishlist"
-                                        >
-                                            <i class="fas fa-trash-alt fa-xs"></i>
-                                        </a>
+                <div class="flex checkout__wrapper">
+                    <div class="w-8/12 shadow-lg checkout__info">
+                        <!-- Deliver Address -->
+                        <div class="mb-8 checkout__deliver">
+                            <div class="checkout__deliver--title">
+                                <span class="checkout__deliver--title_icon"
+                                    ><i class="fas fa-truck fa-xs"></i
+                                ></span>
+                                <span class="checkout__deliver--title_txt">Delivery Address</span>
+                            </div>
+                            <div class="checkout__deliver--address">
+                                <div class="checkout__deliver--items">
+                                    <div class="checkout__deliver--item active">
+                                        <div class="flex items-center justify-between">
+                                            <h3>Khulna</h3>
+                                            <a href="#"><i class="far fa-edit fa-xs"></i></a>
+                                        </div>
+                                        <p>
+                                            Hamidur Rohoman Stadium, Jhenaidah Sadar , Jhenaidah,
+                                            Khulna
+                                        </p>
+                                        <p class="pt-2">Mobile: 01875865301</p>
                                     </div>
-                                </td>
-                            </tr>
-                            <tr class="bg-white border-2 border-gray-200">
-                                <td class="flex items-center px-3 py-2">
-                                    <img
-                                        class="object-cover w-12 h-12 mx-auto rounded"
-                                        src="https://www.techlandbd.com/image/cache/catalog/Processor/AMD/Ryzen%203/amd_ryzen_3_3300x_quad_core-2-90x90.jpg"
-                                        alt="Product Image"
-                                    />
-                                </td>
-                                <td class="px-3 py-2">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >AMD Ryzen 3 3300X 4 Core 8 Thread AM4 Processor</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >Ryzen 3 3300X</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-green-500"
-                                        >In Stock</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >14,400৳</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2">
-                                    <div class="flex items-center justify-center">
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 mr-2 text-white bg-blue-500 rounded  hover:text-white hover:bg-gray-800"
-                                            title="Add to cart"
-                                        >
-                                            <i class="fas fa-cart-arrow-down fa-xs"></i>
-                                        </a>
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 text-white bg-red-400 rounded  hover:text-white hover:bg-red-600"
-                                            title="Remove from wishlist"
-                                        >
-                                            <i class="fas fa-trash-alt fa-xs"></i>
-                                        </a>
+                                    <div class="checkout__deliver--item">
+                                        <div class="flex items-center justify-between">
+                                            <h3>Dhaka</h3>
+                                            <a href="#"><i class="far fa-edit fa-xs"></i></a>
+                                        </div>
+                                        <p>
+                                            BDR camp er pichon gate, near BGB school, Professor
+                                            para, Dhaka
+                                        </p>
+                                        <p class="pt-2">Mobile: 01875865301</p>
                                     </div>
-                                </td>
-                            </tr>
-                            <tr class="bg-white border-2 border-gray-200">
-                                <td class="flex items-center px-3 py-2">
-                                    <img
-                                        class="object-cover w-12 h-12 mx-auto rounded"
-                                        src="https://www.techlandbd.com/image/cache/catalog/Laptop/ASUS/Tuf/dash-f15-fx516pm/grey/asus-tuf-dash-f15-fx516pm-black-2-250x250.jpg"
-                                        alt="Product Image"
-                                    />
-                                </td>
-                                <td class="px-3 py-2">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >AMD Ryzen 3 3300X 4 Core 8 Thread AM4 Processor</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >Ryzen 3 3300X</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-green-500"
-                                        >In Stock</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >14,400৳</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2">
-                                    <div class="flex items-center justify-center">
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 mr-2 text-white bg-blue-500 rounded  hover:text-white hover:bg-gray-800"
-                                            title="Add to cart"
+                                    <div class="bg-gray-100 checkout__deliver--item">
+                                        <div
+                                            class="flex flex-col items-center justify-center h-full"
                                         >
-                                            <i class="fas fa-cart-arrow-down fa-xs"></i>
-                                        </a>
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 text-white bg-red-400 rounded  hover:text-white hover:bg-red-600"
-                                            title="Remove from wishlist"
-                                        >
-                                            <i class="fas fa-trash-alt fa-xs"></i>
-                                        </a>
+                                            <a href="#"><i class="fas fa-plus"></i></a>
+                                            <h5 class="pt-3">Add Address</h5>
+                                        </div>
                                     </div>
-                                </td>
-                            </tr>
-                            <tr class="bg-white border-2 border-gray-200">
-                                <td class="flex items-center px-3 py-2">
-                                    <img
-                                        class="object-cover w-12 h-12 mx-auto rounded"
-                                        src="https://www.techlandbd.com/image/cache/catalog/Laptop/ASUS/Rog/g15-g513qm/black/asus-rog-strix-g15-g513qm-black-laptop-1-250x250.jpg"
-                                        alt="Product Image"
-                                    />
-                                </td>
-                                <td class="px-3 py-2">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >AMD Ryzen 3 3300X 4 Core 8 Thread AM4 Processor</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >Ryzen 3 3300X</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-green-500"
-                                        >In Stock</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >14,400৳</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2">
-                                    <div class="flex items-center justify-center">
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 mr-2 text-white bg-blue-500 rounded  hover:text-white hover:bg-gray-800"
-                                            title="Remove from wishlist"
-                                        >
-                                            <i class="fas fa-cart-arrow-down fa-xs"></i>
-                                        </a>
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 text-white bg-red-400 rounded  hover:text-white hover:bg-red-600"
-                                            title="Remove from wishlist"
-                                        >
-                                            <i class="fas fa-trash-alt fa-xs"></i>
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                </div>
+                            </div>
+                        </div>
 
-                    <div class="w-full my-8 text-right">
-                        <a
-                            href="cart.html"
-                            class="px-3 py-2 text-sm font-semibold text-white bg-blue-500  hover:bg-gray-800 hover:text-white"
-                            >CONTINUE <i class="pl-1 fas fa-long-arrow-alt-right"></i
-                        ></a>
+                        <!-- Product List -->
+                        <div class="mb-8 checkout__product">
+                            <div class="checkout__product--title">
+                                <span class="checkout__product--title_icon"
+                                    ><i class="fas fa-truck fa-xs"></i
+                                ></span>
+                                <span class="checkout__product--title_txt">Order Product</span>
+                            </div>
+                            <div class="checkout__product--products">
+                                <div class="checkout__product--items">
+                                    <div class="checkout__product--item">
+                                        <picture
+                                            ><img
+                                                class="w-16"
+                                                src="./dist/img/product/product1.jpg"
+                                                alt="Product Images"
+                                        /></picture>
+                                        <div class="checkout__product--info">
+                                            <h2 class="checkout__product--name">
+                                                Koti Style Full Sequins Work Designer Party Lehenga
+                                            </h2>
+                                            <h4 class="checkout__product--model">Rayze502</h4>
+                                            <h3 class="checkout__product--price">$1350</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="checkout__product--item">
+                                        <picture
+                                            ><img
+                                                class="w-16"
+                                                src="./dist/img/product/product2.jpg"
+                                                alt="Product Images"
+                                        /></picture>
+                                        <div class="checkout__product--info">
+                                            <h2 class="checkout__product--name">
+                                                Maroon Turtle Neck Bodycon
+                                            </h2>
+                                            <h4 class="checkout__product--model">Rayze10</h4>
+                                            <h3 class="checkout__product--price">$150</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="checkout__product--item">
+                                        <picture
+                                            ><img
+                                                class="w-16"
+                                                src="./dist/img/product/product3.jpg"
+                                                alt="Product Images"
+                                        /></picture>
+                                        <div class="checkout__product--info">
+                                            <h2 class="checkout__product--name">
+                                                Ready Ruffle Saree With Gujrati Embroidery Work
+                                                Blouse
+                                            </h2>
+                                            <h4 class="checkout__product--model">Red1102</h4>
+                                            <h3 class="checkout__product--price">$5350</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Payment List -->
+                        <div class="mb-8 checkout__payment">
+                            <div class="checkout__payment--title">
+                                <span class="checkout__payment--title_icon"
+                                    ><i class="fas fa-tags fa-xs"></i
+                                ></span>
+                                <span class="checkout__payment--title_txt">Payment Method</span>
+                            </div>
+                            <!-- Payment Method Select -->
+                            <div class="checkout__payment--payments">
+                                <div class="checkout__payment--items">
+                                    <ul>
+                                        <li>
+                                            <input type="radio" id="cash" name="pay" />
+                                            <label for="cash">Cash</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="Bkash" name="pay" />
+                                            <label for="Bkash">Bkash</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="Rocket" name="pay" />
+                                            <label for="Rocket">Cash</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="Nagad" name="pay" />
+                                            <label for="Nagad">Nagad</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="Wallet" name="pay" />
+                                            <label for="Wallet">Wallet</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Payment Method Box -->
+                            <div class="checkout__payment--box">
+                                <div class="checkout__payment--box__wrapper">
+                                    <div class="pb-2 pl-3 text-sm text-gray-700">
+                                        <h3 class="pb-1">
+                                            For outside Dhaka you will have to pay advance 200Tk.
+                                        </h3>
+                                        <h2>
+                                            <span class="pr-1 text-red-400">Bkash: </span
+                                            >01485858574
+                                        </h2>
+                                    </div>
+                                    <div class="flex flex-wrap checkout__payment--box__items">
+                                        <div
+                                            class="flex items-center w-1/2 my-2  checkout__payment--box__item"
+                                        >
+                                            <label class="inline-block w-4/12">Total Amount</label>
+                                            <input
+                                                class="w-8/12"
+                                                tabindex="1"
+                                                type="text"
+                                                value="$1640"
+                                                readonly
+                                            />
+                                        </div>
+
+                                        <div
+                                            class="flex items-center w-1/2 my-2  checkout__payment--box__item"
+                                        >
+                                            <label class="inline-block w-4/12">Bkash No</label>
+                                            <input
+                                                class="w-8/12"
+                                                type="number"
+                                                tabindex="4"
+                                                placeholder="018xxxxxxxx"
+                                            />
+                                        </div>
+                                        <div
+                                            class="flex items-center w-1/2 my-2  checkout__payment--box__item"
+                                        >
+                                            <label class="inline-block w-4/12">Due</label>
+                                            <input
+                                                class="w-8/12"
+                                                type="text"
+                                                tabindex="2"
+                                                value="$200"
+                                                readonly
+                                            />
+                                        </div>
+                                        <div
+                                            class="flex items-center w-1/2 my-2  checkout__payment--box__item"
+                                        >
+                                            <label class="inline-block w-4/12"
+                                                >Transaction Id</label
+                                            >
+                                            <input
+                                                class="w-8/12"
+                                                type="number"
+                                                tabindex="5"
+                                                placeholder="0454848445"
+                                            />
+                                        </div>
+                                        <div
+                                            class="flex items-center w-1/2  checkout__payment--box__item"
+                                        >
+                                            <label class="inline-block w-4/12">Total Amount</label>
+                                            <input
+                                                class="w-8/12"
+                                                tabindex="3"
+                                                type="text"
+                                                value="$1840"
+                                                readonly
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-4/12 shadow-lg checkout__subtotal">
+                        <h2
+                            class="pb-3 mb-3 text-2xl font-semibold text-gray-800 border-b border-gray-200 "
+                        >
+                            Order Details
+                        </h2>
+                        <div class="checkout__subtotal--wrapper">
+                            <div class="checkout__subtotal--item">
+                                <p>Price</p>
+                                <h3>$49.000</h3>
+                            </div>
+                            <div class="checkout__subtotal--item">
+                                <p>Delivery Charge</p>
+                                <h3>$120</h3>
+                            </div>
+                            <div class="checkout__subtotal--item">
+                                <p>Discount</p>
+                                <h3>$15.0</h3>
+                            </div>
+                            <div class="checkout__subtotal--item">
+                                <p>Total Amount</p>
+                                <h3>$65.000</h3>
+                            </div>
+                            <div
+                                class="checkout__subtotal--item"
+                                style="
+                                    justify-content: flex-end;
+                                    border-bottom: none;
+                                    margin-top: 1rem;
+                                "
+                            >
+                                <a
+                                    href="#"
+                                    class="px-5 py-2 text-base font-semibold text-white bg-blue-700  hover:bg-gray-800 hover:text-white"
+                                    >Confirm Order
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
-        <!-- ******** Wishlist END ******** -->
+        <!-- ******** checkout END ******** -->
 
         <!-- ******** Footer START ******** -->
         <footer class="mt-20 mb-8 footer">

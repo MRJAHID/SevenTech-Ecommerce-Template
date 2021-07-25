@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Wishlist | Seven Tech</title>
+        <title>Login | Seven Tech</title>
         <!-- Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -102,8 +102,7 @@
                                         <a href="#" class="relative" title="Wishlist"
                                             ><i class="far fa-heart"></i>
                                             <span
-                                                style="background-color: #005dab"
-                                                class="absolute flex items-center justify-center w-5 h-5 text-xs font-normal text-white rounded-full  left-2 top-2"
+                                                class="absolute flex items-center justify-center w-5 h-5 text-xs font-normal text-white rounded-full  bg-blue-550 left-2 top-2"
                                                 >1</span
                                             ></a
                                         >
@@ -116,8 +115,7 @@
                                                 alt="Cart"
                                             />
                                             <span
-                                                style="background-color: #005dab"
-                                                class="absolute flex items-center justify-center w-5 h-5 text-xs font-normal text-white rounded-full  left-2 top-2"
+                                                class="absolute flex items-center justify-center w-5 h-5 text-xs font-normal text-white rounded-full  bg-blue-550 left-2 top-2"
                                                 >2</span
                                             >
                                         </a>
@@ -169,267 +167,92 @@
         </header>
         <!-- ******** Header END ******** -->
 
-        <!-- ******** Breadcrumb START ******** -->
-        <div class="container px-2 py-6 mx-auto breadcrumb-wrapper">
-            <ol class="breadcrumbs breadcrumbs--one">
-                <li>
-                    <a class="breadcrumb" href="#">
-                        <span itemprop="name">
-                            <i class="pr-1 fas fa-home"></i>
-                            <span>Home</span>
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a class="breadcrumb" href="#">
-                        <span itemprop="name">
-                            <i class="pr-1 fas fa-anchor fa-sm"></i>
-                            <span>Jane Doe</span>
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <span class="breadcrumb">
-                        <span itemprop="name">Details</span>
-                    </span>
-                </li>
-            </ol>
-        </div>
-        <!-- ******** Breadcrumb END ******** -->
-
-        <!-- ******** Wishlist START ******** -->
-        <main class="my-10 wishlist">
+        <!--  ******** login START ******** -->
+        <main class="auth bg-blue-50">
             <div class="container px-2 mx-auto">
-                <div class="wishlist__wrapper">
-                    <h2 class="mb-6 text-3xl font-normal text-gray-800">Your wishlist items</h2>
-                    <table class="min-w-full table-auto">
-                        <thead class="justify-between">
-                            <tr class="bg-gray-800">
-                                <th class="px-6 py-2">
-                                    <span class="text-sm text-gray-300 capitalize">IMAGE</span>
-                                </th>
-                                <th class="px-6 py-2 text-left">
-                                    <span class="text-sm text-gray-300 capitalize"
-                                        >PRODUCT NAME</span
-                                    >
-                                </th>
-                                <th class="px-6 py-2">
-                                    <span class="text-sm text-gray-300 capitalize">MODEL</span>
-                                </th>
-                                <th class="px-6 py-2">
-                                    <span class="text-sm text-gray-300 capitalize">STOCK</span>
-                                </th>
-                                <th class="px-6 py-2">
-                                    <span class="text-sm text-gray-300 capitalize">PRICE</span>
-                                </th>
-                                <th class="px-6 py-2">
-                                    <span class="text-sm text-gray-300 capitalize">ACTION</span>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody class="bg-gray-200">
-                            <tr class="bg-white border-2 border-gray-200">
-                                <td class="flex items-center px-3 py-2">
-                                    <img
-                                        class="object-cover w-12 h-12 mx-auto rounded"
-                                        src="https://www.techlandbd.com/image/cache/catalog/Laptop/ASUS/Rog/g15-g513qm/black/asus-rog-strix-g15-g513qm-black-laptop-1-250x250.jpg"
-                                        alt="Product Image"
-                                    />
-                                </td>
-                                <td class="px-3 py-2">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >AMD Ryzen 3 3300X 4 Core 8 Thread AM4 Processor</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >Ryzen 3 3300X</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-green-500"
-                                        >In Stock</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >14,400৳</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2">
-                                    <div class="flex items-center justify-center">
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 mr-2 text-white bg-blue-500 rounded  hover:text-white hover:bg-gray-800"
-                                            title="Remove from wishlist"
-                                        >
-                                            <i class="fas fa-cart-arrow-down fa-xs"></i>
-                                        </a>
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 text-white bg-red-400 rounded  hover:text-white hover:bg-red-600"
-                                            title="Remove from wishlist"
-                                        >
-                                            <i class="fas fa-trash-alt fa-xs"></i>
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="bg-white border-2 border-gray-200">
-                                <td class="flex items-center px-3 py-2">
-                                    <img
-                                        class="object-cover w-12 h-12 mx-auto rounded"
-                                        src="https://www.techlandbd.com/image/cache/catalog/Processor/AMD/Ryzen%203/amd_ryzen_3_3300x_quad_core-2-90x90.jpg"
-                                        alt="Product Image"
-                                    />
-                                </td>
-                                <td class="px-3 py-2">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >AMD Ryzen 3 3300X 4 Core 8 Thread AM4 Processor</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >Ryzen 3 3300X</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-green-500"
-                                        >In Stock</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >14,400৳</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2">
-                                    <div class="flex items-center justify-center">
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 mr-2 text-white bg-blue-500 rounded  hover:text-white hover:bg-gray-800"
-                                            title="Add to cart"
-                                        >
-                                            <i class="fas fa-cart-arrow-down fa-xs"></i>
-                                        </a>
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 text-white bg-red-400 rounded  hover:text-white hover:bg-red-600"
-                                            title="Remove from wishlist"
-                                        >
-                                            <i class="fas fa-trash-alt fa-xs"></i>
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="bg-white border-2 border-gray-200">
-                                <td class="flex items-center px-3 py-2">
-                                    <img
-                                        class="object-cover w-12 h-12 mx-auto rounded"
-                                        src="https://www.techlandbd.com/image/cache/catalog/Laptop/ASUS/Tuf/dash-f15-fx516pm/grey/asus-tuf-dash-f15-fx516pm-black-2-250x250.jpg"
-                                        alt="Product Image"
-                                    />
-                                </td>
-                                <td class="px-3 py-2">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >AMD Ryzen 3 3300X 4 Core 8 Thread AM4 Processor</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >Ryzen 3 3300X</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-green-500"
-                                        >In Stock</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >14,400৳</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2">
-                                    <div class="flex items-center justify-center">
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 mr-2 text-white bg-blue-500 rounded  hover:text-white hover:bg-gray-800"
-                                            title="Add to cart"
-                                        >
-                                            <i class="fas fa-cart-arrow-down fa-xs"></i>
-                                        </a>
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 text-white bg-red-400 rounded  hover:text-white hover:bg-red-600"
-                                            title="Remove from wishlist"
-                                        >
-                                            <i class="fas fa-trash-alt fa-xs"></i>
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="bg-white border-2 border-gray-200">
-                                <td class="flex items-center px-3 py-2">
-                                    <img
-                                        class="object-cover w-12 h-12 mx-auto rounded"
-                                        src="https://www.techlandbd.com/image/cache/catalog/Laptop/ASUS/Rog/g15-g513qm/black/asus-rog-strix-g15-g513qm-black-laptop-1-250x250.jpg"
-                                        alt="Product Image"
-                                    />
-                                </td>
-                                <td class="px-3 py-2">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >AMD Ryzen 3 3300X 4 Core 8 Thread AM4 Processor</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >Ryzen 3 3300X</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-green-500"
-                                        >In Stock</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-semibold text-left text-gray-800"
-                                        >14,400৳</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2">
-                                    <div class="flex items-center justify-center">
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 mr-2 text-white bg-blue-500 rounded  hover:text-white hover:bg-gray-800"
-                                            title="Remove from wishlist"
-                                        >
-                                            <i class="fas fa-cart-arrow-down fa-xs"></i>
-                                        </a>
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 text-white bg-red-400 rounded  hover:text-white hover:bg-red-600"
-                                            title="Remove from wishlist"
-                                        >
-                                            <i class="fas fa-trash-alt fa-xs"></i>
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="flex shadow-xl auth__wrapper">
+                    <!-- Left Side -->
+                    <div class="w-1/2 bg-blue-300 auth__left">
+                        <img
+                            src="./dist/img/login.svg"
+                            class="w-full h-full mx-auto"
+                            alt="auth Image"
+                        />
+                    </div>
+                    <!-- Right Side -->
+                    <div class="w-1/2 p-12 bg-white auth__right">
+                        <!-- Header -->
+                        <div class="auth__right--wrapper">
+                            <h2 class="mb-1 text-3xl font-bold text-gray-800">Get Started</h2>
+                            <p class="text-sm text-gray-600">
+                                Already have an account?
+                                <a href="#" class="text-blue-550">Log in</a>
+                            </p>
+                            <!-- SignUp With -->
+                            <div class="flex mt-4 mb-12">
+                                <a
+                                    href="#"
+                                    class="flex items-center p-3 mr-3 text-gray-800 border border-gray-400 rounded-md "
+                                >
+                                    <i class="pr-2 fab fa-google text-blue-550"></i>
+                                    <span class="">Sign up with Google</span>
+                                </a>
 
-                    <div class="w-full my-8 text-right">
-                        <a
-                            href="cart.html"
-                            class="px-3 py-2 text-sm font-semibold text-white bg-blue-500  hover:bg-gray-800 hover:text-white"
-                            >CONTINUE <i class="pl-1 fas fa-long-arrow-alt-right"></i
-                        ></a>
+                                <a
+                                    href="#"
+                                    class="flex items-center p-3 text-white border border-gray-400 rounded-md  hover:text-white bg-blue-550"
+                                >
+                                    <i class="pr-2 fab fa-facebook"></i>
+                                    <span class="">Sign up with Facebook</span>
+                                </a>
+                            </div>
+                            <div class="auth__form">
+                                <!-- Form -->
+                                <form action="">
+                                    <div class="flex flex-col mb-4">
+                                        <label for="" class="auth__label">Email Address</label>
+                                        <div class="relative">
+                                            <i class="far fa-envelope"></i>
+                                            <input
+                                                type="email"
+                                                class="auth__input"
+                                                placeholder="Enter Your Email"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col mb-4">
+                                        <label for="" class="auth__label">Password</label>
+                                        <div class="relative">
+                                            <i class="fas fa-lock"></i>
+                                            <input
+                                                type="password"
+                                                class="auth__input"
+                                                placeholder="Enter Your Password"
+                                            />
+                                        </div>
+                                    </div>
+                                    <!-- Terms Condition -->
+                                    <div class="my-4 text-sm">
+                                        <input type="checkbox" class="mr-1" />
+                                        <label for="" class="text-gray-500">
+                                            I agree to platforms
+                                            <a href="#" class="text-blue-550">Terms of Service</a>
+                                            and
+                                            <a href="#" class="text-blue-550"
+                                                >Privacy Policy</a
+                                            ></label
+                                        >
+                                    </div>
+                                    <!-- Button -->
+                                    <a href="#" class="auth__btn"> Register </a>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
-        <!-- ******** Wishlist END ******** -->
+        <!-- ******** auth END ******** -->
 
         <!-- ******** Footer START ******** -->
         <footer class="mt-20 mb-8 footer">

@@ -4,9 +4,23 @@
 @import './abstract/global';
 @import './abstract/small';
 
+// Components
+@import './components/product';
+@import './components/breadcrumb';
+@import './components/quantity';
+@import './components/button';
+
 // pages
 @import './pages/home';
 @import './pages/wishlist';
+@import './pages/productlist';
+@import './pages/checkout';
+@import './pages/invoice';
+@import './pages/auth';
+@import './pages/productview';
+@import './pages/account';
+@import './pages/profile';
+@import './pages/orderhistory';
 
 // layouts
 @import './layouts/topheader';
@@ -16,7 +30,3 @@
 @import './layouts/productpanel';
 @import './layouts/upcoming';
 @import './layouts/footer';
-
-// Components
-@import './components/product';
-@import './components/breadcrumb';
