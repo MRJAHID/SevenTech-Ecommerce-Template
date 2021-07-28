@@ -143,4 +143,94 @@
             cursor: pointer;
         }
     }
+
+    .productviewinfo {
+        &__nav {
+            ul {
+                display: flex;
+                padding-bottom: 1rem;
+                margin-bottom: 1rem;
+                border-bottom: 1px solid $smoke;
+                li {
+                    margin-right: 2rem;
+                    position: relative;
+                    a {
+                        font-weight: 600;
+                        color: $bg;
+                        font-size: 1rem;
+                    }
+                    &::after {
+                        content: '';
+                        height: 2px;
+                        background-color: $primary-color;
+                        width: 0%;
+                        display: block;
+                        position: absolute;
+                        bottom: -17px;
+                        left: 0;
+                        @include transitionlg;
+                    }
+                    &:hover {
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        &__specif {
+            &--head {
+                padding: 0 1rem;
+                margin-bottom: 1rem;
+                background-color: rgba(55, 73, 187, 0.05);
+                h2 {
+                    color: $primary-color;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    padding: 0.7rem 0;
+                }
+            }
+            &--wrap {
+                padding: 0.2rem 1rem;
+            }
+            &--item {
+                padding: 0 1rem;
+                display: flex;
+                padding-bottom: 8px;
+                margin-bottom: 8px;
+                border-bottom: 1px solid $smoke;
+                h2 {
+                    color: #696868;
+                    font-size: 1rem;
+                }
+                p {
+                    color: $bg;
+                    font-weight: normal;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+        &__review--form {
+            padding-left: 1rem;
+            label {
+                color: $bg;
+                font-weight: 600;
+                font-size: 1rem;
+            }
+            textarea,
+            input {
+                padding: 6px 1rem;
+                border-radius: 5px;
+                border: 1px solid $smoke;
+                margin-left: 10px;
+                color: $bg;
+            }
+            .button {
+                background-color: $primary-color;
+                &:hover {
+                    background-color: $bg;
+                }
+            }
+        }
+    }
 }

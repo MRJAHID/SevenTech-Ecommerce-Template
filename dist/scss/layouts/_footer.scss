@@ -11,6 +11,10 @@
                     line-height: 1.5rem;
                 }
             }
+            @media (max-width: 767px) {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
             &--social {
                 ul {
                     display: flex;
@@ -50,12 +54,16 @@
         }
         .footer__linkup {
             width: 67%;
-            &-wrap {
+            @media (max-width: 767px) {
+                width: 100%;
+                margin-bottom: 1rem;
             }
             &--items {
                 margin-bottom: 2.25rem;
-
                 display: flex;
+                @media (max-width: 767px) {
+                    flex-wrap: wrap;
+                }
             }
             &--item {
                 h6 {
@@ -92,6 +100,9 @@
                     }
                     ul {
                         display: flex;
+                        @media (max-width: 767px) {
+                            flex-wrap: wrap;
+                        }
                         li {
                             padding-right: 1rem;
 

@@ -26,7 +26,7 @@
         <!-- ******** Header START ******** -->
         <header class="header">
             <!-- Header Top START -->
-            <section class="header__top">
+            <section class="hidden header__top md:block">
                 <div class="container px-2 mx-auto">
                     <div class="flex items-center justify-between py-3 header__top-container">
                         <div class="header__top-left">
@@ -71,19 +71,25 @@
             <!-- Header Main START -->
             <section class="header-main">
                 <div class="container px-2 mx-auto">
-                    <div class="flex items-center justify-between py-6 header-main__container">
+                    <div
+                        class="flex items-center justify-between py-3  md:py-6 header-main__container"
+                    >
                         <div class="flex items-center w-1/4 header-main__logo">
                             <!-- Logo -->
-                            <a href="index.html" class="mr-10">
+                            <a href="index.html" class="hidden mr-10 md:block">
                                 <img src="./dist/img/logo.png" alt="Logo" class="w-28" />
                             </a>
                             <!-- Menu Btn -->
-                            <a href="#">
+                            <a href="#" class="pl-4 md:hidden">
                                 <span><i class="fas fa-bars"></i></span>
                             </a>
                         </div>
-                        <div class="w-2/4 header-main__search">
-                            <form action="">
+                        <div class="w-1/4 md:w-2/4 header-main__search md:block">
+                            <!-- Logo -->
+                            <a href="index.html" class="mr-10 md:hidden">
+                                <img src="./dist/img/logo.png" alt="Logo" class="w-24" />
+                            </a>
+                            <form action="" class="hidden md:flex">
                                 <input type="text" name="" id="" placeholder="Search Here" />
                                 <div class="header-main__search--btn">
                                     <button type="button"><i class="fas fa-search"></i></button>
@@ -93,12 +99,12 @@
                         <div class="w-1/4 header-main__icons">
                             <div class="w-full header-main__icons-container">
                                 <ul class="flex items-center justify-end">
-                                    <li>
+                                    <li class="hidden md:block">
                                         <a href="#" title="Compare"
                                             ><img src="./dist/icons/compare.svg" alt="compare"
                                         /></a>
                                     </li>
-                                    <li>
+                                    <li class="hidden md:block">
                                         <a href="#" class="relative" title="Wishlist"
                                             ><i class="far fa-heart"></i>
                                             <span
@@ -107,6 +113,13 @@
                                                 >1</span
                                             ></a
                                         >
+                                    </li>
+                                    <li class="md:hidden">
+                                        <img
+                                            class="inline-block"
+                                            src="./dist/icons/lnr-magnifier.svg"
+                                            alt="Cart"
+                                        />
                                     </li>
                                     <li>
                                         <a href="#" class="relative" title="Cart">
@@ -121,7 +134,9 @@
                                                 >2</span
                                             >
                                         </a>
-                                        <span class="pl-2 font-bold">$1370</span>
+                                        <span class="hidden pl-2 font-bold md:inline-block"
+                                            >$1370</span
+                                        >
                                     </li>
                                 </ul>
                             </div>
@@ -132,7 +147,7 @@
             <!-- Header Main END -->
 
             <!-- Header Menu START -->
-            <nav class="header-menu">
+            <nav class="hidden header-menu md:block">
                 <div class="container px-2 mx-auto">
                     <div class="flex items-center py-2 header-menu__container">
                         <div class="header-menu-left">
@@ -144,12 +159,54 @@
                                 />
                                 <p>All Departments</p>
                             </span>
+
+                            <nav class="header__categories">
+                                <ul>
+                                    <li><a href="#"> Computer & Accessories </a></li>
+                                    <li><a href="#"> Cameras, Audio & Video </a></li>
+                                    <li><a href="#"> Mobile & Tablets </a></li>
+                                    <li><a href="#"> Movies, Music & Video </a></li>
+                                    <li><a href="#"> TV & Radio </a></li>
+                                    <li><a href="#"> All Laptop </a></li>
+                                    <li><a href="#"> Watches & Eyewear </a></li>
+                                    <li><a href="#"> Car, Motorbike & Industrial </a></li>
+                                    <li><a href="#"> All Accessories </a></li>
+                                    <li><a href="#"> Top 100 Offers </a></li>
+                                </ul>
+                            </nav>
                         </div>
                         <div class="ml-6 header-menu-right">
-                            <div class="header-menu-right__wrap">
-                                <ul>
-                                    <li><a href="#">Desktop</a></li>
-                                    <li><a href="#">Laptop</a></li>
+                            <nav class="header-menu-right__wrap">
+                                <ul class="top_menu">
+                                    <li>
+                                        <a href="#">Desktop</a>
+                                        <ul class="top_menu-scnd">
+                                            <li><a href="#">All Laptop</a></li>
+                                            <li><a href="#">Gaming Laptop</a></li>
+                                            <li><a href="#">Ultrabook Laptop</a></li>
+                                            <li><a href="#">Laptop Bag</a></li>
+                                            <li><a href="#">Laptop Accessories</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Laptop</a>
+                                        <ul class="top_menu-scnd">
+                                            <li><a href="#">All Laptop</a></li>
+                                            <li><a href="#">Gaming Laptop</a></li>
+                                            <li>
+                                                <a href="#">Ultrabook Laptop</a>
+                                                <ul class="top_menu-third">
+                                                    <li><a href="#">All Laptop</a></li>
+                                                    <li><a href="#">Gaming Laptop</a></li>
+                                                    <li><a href="#">Ultrabook Laptop</a></li>
+                                                    <li><a href="#">Laptop Bag</a></li>
+                                                    <li><a href="#">Laptop Accessories</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Laptop Bag</a></li>
+                                            <li><a href="#">Laptop Accessories</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a href="#">Mobile</a></li>
                                     <li><a href="#">Tablet</a></li>
                                     <li><a href="#">Camera</a></li>
@@ -160,7 +217,7 @@
                                     <li><a href="#">Security</a></li>
                                     <li><a href="#">Component</a></li>
                                 </ul>
-                            </div>
+                            </nav>
                         </div>
                     </div>
                 </div>
@@ -628,7 +685,7 @@
         <!-- ******** Footer START ******** -->
         <footer class="mt-20 mb-8 footer">
             <div class="container px-2 mx-auto">
-                <div class="footer__container">
+                <div class="flex-col footer__container md:flex-row">
                     <!-- Left Side -->
                     <div class="footer__info">
                         <picture class="inline-block mb-6 footer__info--logo">
@@ -688,9 +745,9 @@
                     </div>
                     <!-- Right Side -->
                     <div class="footer__linkup">
-                        <div class="px-4 footer__linkup-wrap">
+                        <div class="px-1 md:px-4 footer__linkup-wrap">
                             <div class="footer__linkup--items">
-                                <div class="w-1/4 footer__linkup--item">
+                                <div class="w-2/4 md:w-1/4 footer__linkup--item">
                                     <h6 class="mb-6">Information</h6>
                                     <div class="">
                                         <ul>
@@ -701,7 +758,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="w-1/4 footer__linkup--item">
+                                <div class="w-2/4 md:w-1/4 footer__linkup--item">
                                     <h6 class="mb-6">My Account</h6>
                                     <div class="">
                                         <ul>
@@ -712,7 +769,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="w-1/4 footer__linkup--item">
+                                <div class="w-2/4 md:w-1/4 footer__linkup--item">
                                     <h6 class="mb-6">Information</h6>
                                     <div class="">
                                         <ul>
@@ -723,7 +780,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="w-1/4 footer__linkup--item">
+                                <div class="w-2/4 md:w-1/4 footer__linkup--item">
                                     <h6 class="mb-6">Customer Service</h6>
                                     <div class="">
                                         <ul>
@@ -736,7 +793,7 @@
                                 </div>
                             </div>
                             <div class="footer__linkup--category">
-                                <div class="footer__linkup--category-wrap">
+                                <div class="mb-3 footer__linkup--category-wrap md:mb-0">
                                     <p><strong>Address:</strong></p>
                                     <ul>
                                         <li><a href="#">Order</a></li>
@@ -747,7 +804,7 @@
                                         <li><a href="#">Accessories</a></li>
                                     </ul>
                                 </div>
-                                <div class="footer__linkup--category-wrap">
+                                <div class="mb-3 footer__linkup--category-wrap md:mb-0">
                                     <p><strong>Headphones:</strong></p>
                                     <ul>
                                         <li><a href="#">Order</a></li>
@@ -761,7 +818,7 @@
                                         <li><a href="#">Accessories</a></li>
                                     </ul>
                                 </div>
-                                <div class="footer__linkup--category-wrap">
+                                <div class="mb-3 footer__linkup--category-wrap md:mb-0">
                                     <p><strong>Computers:</strong></p>
                                     <ul>
                                         <li><a href="#">Order</a></li>
@@ -780,9 +837,9 @@
                 </div>
 
                 <div
-                    class="flex items-center justify-between pt-6 pb-2 mt-6 border-t border-gray-300  footer__bottom"
+                    class="flex flex-col items-center justify-between pt-6 pb-2 mt-1 border-t border-gray-300  md:mt-5 md:flex-row footer__bottom"
                 >
-                    <div class="footer__copyright">
+                    <div class="mb-3 footer__copyright md:mb-0">
                         <p>
                             ©2021 Copyright <b>SevenTech</b> Made With by
                             <a href="www.softarch.com"><b>SoftArch</b></a>

@@ -26,7 +26,7 @@
         <!-- ******** Header START ******** -->
         <header class="header">
             <!-- Header Top START -->
-            <section class="header__top">
+            <section class="hidden header__top md:block">
                 <div class="container px-2 mx-auto">
                     <div class="flex items-center justify-between py-3 header__top-container">
                         <div class="header__top-left">
@@ -71,19 +71,25 @@
             <!-- Header Main START -->
             <section class="header-main">
                 <div class="container px-2 mx-auto">
-                    <div class="flex items-center justify-between py-6 header-main__container">
+                    <div
+                        class="flex items-center justify-between py-3  md:py-6 header-main__container"
+                    >
                         <div class="flex items-center w-1/4 header-main__logo">
                             <!-- Logo -->
-                            <a href="index.html" class="mr-10">
+                            <a href="index.html" class="hidden mr-10 md:block">
                                 <img src="./dist/img/logo.png" alt="Logo" class="w-28" />
                             </a>
                             <!-- Menu Btn -->
-                            <a href="#">
+                            <a href="#" class="pl-4 md:hidden">
                                 <span><i class="fas fa-bars"></i></span>
                             </a>
                         </div>
-                        <div class="w-2/4 header-main__search">
-                            <form action="">
+                        <div class="w-1/4 md:w-2/4 header-main__search md:block">
+                            <!-- Logo -->
+                            <a href="index.html" class="mr-10 md:hidden">
+                                <img src="./dist/img/logo.png" alt="Logo" class="w-24" />
+                            </a>
+                            <form action="" class="hidden md:flex">
                                 <input type="text" name="" id="" placeholder="Search Here" />
                                 <div class="header-main__search--btn">
                                     <button type="button"><i class="fas fa-search"></i></button>
@@ -93,12 +99,12 @@
                         <div class="w-1/4 header-main__icons">
                             <div class="w-full header-main__icons-container">
                                 <ul class="flex items-center justify-end">
-                                    <li>
+                                    <li class="hidden md:block">
                                         <a href="#" title="Compare"
                                             ><img src="./dist/icons/compare.svg" alt="compare"
                                         /></a>
                                     </li>
-                                    <li>
+                                    <li class="hidden md:block">
                                         <a href="#" class="relative" title="Wishlist"
                                             ><i class="far fa-heart"></i>
                                             <span
@@ -107,6 +113,13 @@
                                                 >1</span
                                             ></a
                                         >
+                                    </li>
+                                    <li class="md:hidden">
+                                        <img
+                                            class="inline-block"
+                                            src="./dist/icons/lnr-magnifier.svg"
+                                            alt="Cart"
+                                        />
                                     </li>
                                     <li>
                                         <a href="#" class="relative" title="Cart">
@@ -121,7 +134,9 @@
                                                 >2</span
                                             >
                                         </a>
-                                        <span class="pl-2 font-bold">$1370</span>
+                                        <span class="hidden pl-2 font-bold md:inline-block"
+                                            >$1370</span
+                                        >
                                     </li>
                                 </ul>
                             </div>
@@ -132,7 +147,7 @@
             <!-- Header Main END -->
 
             <!-- Header Menu START -->
-            <nav class="header-menu">
+            <nav class="hidden header-menu md:block">
                 <div class="container px-2 mx-auto">
                     <div class="flex items-center py-2 header-menu__container">
                         <div class="header-menu-left">
@@ -144,12 +159,54 @@
                                 />
                                 <p>All Departments</p>
                             </span>
+
+                            <nav class="header__categories">
+                                <ul>
+                                    <li><a href="#"> Computer & Accessories </a></li>
+                                    <li><a href="#"> Cameras, Audio & Video </a></li>
+                                    <li><a href="#"> Mobile & Tablets </a></li>
+                                    <li><a href="#"> Movies, Music & Video </a></li>
+                                    <li><a href="#"> TV & Radio </a></li>
+                                    <li><a href="#"> All Laptop </a></li>
+                                    <li><a href="#"> Watches & Eyewear </a></li>
+                                    <li><a href="#"> Car, Motorbike & Industrial </a></li>
+                                    <li><a href="#"> All Accessories </a></li>
+                                    <li><a href="#"> Top 100 Offers </a></li>
+                                </ul>
+                            </nav>
                         </div>
                         <div class="ml-6 header-menu-right">
-                            <div class="header-menu-right__wrap">
-                                <ul>
-                                    <li><a href="#">Desktop</a></li>
-                                    <li><a href="#">Laptop</a></li>
+                            <nav class="header-menu-right__wrap">
+                                <ul class="top_menu">
+                                    <li>
+                                        <a href="#">Desktop</a>
+                                        <ul class="top_menu-scnd">
+                                            <li><a href="#">All Laptop</a></li>
+                                            <li><a href="#">Gaming Laptop</a></li>
+                                            <li><a href="#">Ultrabook Laptop</a></li>
+                                            <li><a href="#">Laptop Bag</a></li>
+                                            <li><a href="#">Laptop Accessories</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Laptop</a>
+                                        <ul class="top_menu-scnd">
+                                            <li><a href="#">All Laptop</a></li>
+                                            <li><a href="#">Gaming Laptop</a></li>
+                                            <li>
+                                                <a href="#">Ultrabook Laptop</a>
+                                                <ul class="top_menu-third">
+                                                    <li><a href="#">All Laptop</a></li>
+                                                    <li><a href="#">Gaming Laptop</a></li>
+                                                    <li><a href="#">Ultrabook Laptop</a></li>
+                                                    <li><a href="#">Laptop Bag</a></li>
+                                                    <li><a href="#">Laptop Accessories</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Laptop Bag</a></li>
+                                            <li><a href="#">Laptop Accessories</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a href="#">Mobile</a></li>
                                     <li><a href="#">Tablet</a></li>
                                     <li><a href="#">Camera</a></li>
@@ -160,7 +217,7 @@
                                     <li><a href="#">Security</a></li>
                                     <li><a href="#">Component</a></li>
                                 </ul>
-                            </div>
+                            </nav>
                         </div>
                     </div>
                 </div>
@@ -201,143 +258,454 @@
         <main class="my-8 productview">
             <div class="container px-2 mx-auto">
                 <div class="flex productview__wrapper">
-                    <div class="flex w-10/12 productview__left">
-                        <div class="w-5/12 productview__photo">
-                            <div class="productview__photo--main">
-                                <picture class="">
-                                    <a href="#">
-                                        <img
-                                            src="https://www.techlandbd.com/image/cache/catalog/Laptop/Hp%20Laptop/dq2095tu/dq2095tu-3-500x500.jpg"
-                                        />
-                                    </a>
-                                </picture>
+                    <!-- Left Side-->
+                    <div class="flex flex-col w-10/12 productview__left">
+                        <!-- Product Information -->
+                        <div class="flex">
+                            <div class="w-5/12 productview__photo">
+                                <!-- Product Main Photo -->
+                                <div class="productview__photo--main">
+                                    <picture class="">
+                                        <a href="#">
+                                            <img
+                                                src="https://www.techlandbd.com/image/cache/catalog/Laptop/Hp%20Laptop/dq2095tu/dq2095tu-3-500x500.jpg"
+                                            />
+                                        </a>
+                                    </picture>
+                                </div>
+                                <!-- Product SMall Photo -->
+                                <div class="productview__photo--small">
+                                    <picture class="flex justify-center">
+                                        <a href="#">
+                                            <img
+                                                class="w-28 active"
+                                                src="./dist/img/product/product1.jpg"
+                                            />
+                                        </a>
+                                        <a href="#">
+                                            <img
+                                                class="w-28"
+                                                src="./dist/img/product/product2.jpg"
+                                            />
+                                        </a>
+                                        <a href="#">
+                                            <img
+                                                class="w-28"
+                                                src="./dist/img/product/product3.jpg"
+                                            />
+                                        </a>
+                                    </picture>
+                                </div>
                             </div>
-                            <div class="productview__photo--small">
-                                <picture class="flex justify-center">
-                                    <a href="#">
-                                        <img
-                                            class="w-28 active"
-                                            src="./dist/img/product/product1.jpg"
+                            <div class="w-7/12 productview__info">
+                                <div class="productview__name">
+                                    <!-- Product Category -->
+                                    <a href="#" class="inline-block mb-3 text-sm text-gray-600"
+                                        >Headphones</a
+                                    >
+                                    <!-- Product Name -->
+                                    <h2>
+                                        A4 TECH BLOODY B500N MECHA LIKE SWITCH BACKLIT GAMING
+                                        KEYBOARD
+                                    </h2>
+                                </div>
+                                <!-- Product Ratings -->
+                                <div class="mb-3 product__ratings">
+                                    <span class="color-yellow"><i class="fa fa-star"></i></span>
+                                    <span class="color-yellow"><i class="fa fa-star"></i></span>
+                                    <span class="color-yellow"><i class="fa fa-star"></i></span>
+                                    <span class="color-yellow"><i class="fa fa-star"></i></span>
+                                    <span class="color-yellow"><i class="fa fa-star"></i></span>
+                                    <a href="#" class="pl-2 text-sm text-gray-500"
+                                        >( <i class="pr-1 fas fa-pen-nib fa-xs"></i> Write a review
+                                        )</a
+                                    >
+                                </div>
+                                <!-- Product Info -->
+                                <div class="mb-6 productview__tags">
+                                    <span
+                                        >Status:
+                                        <strong class="text-green-600">In Stock</strong></span
+                                    >
+                                    <span
+                                        >Brand: <strong class="text-blue-550">A4Tech</strong></span
+                                    >
+                                    <span>Model: <strong>B500N</strong></span>
+                                    <span>Sku: <strong>ST5484</strong></span>
+                                </div>
+                                <!-- Product Desc -->
+                                <div class="mb-7 productview__desc">
+                                    <ul>
+                                        <li><h4>MECHA-LIKE Switch with Red Backlight</h4></li>
+                                        <li><h4>Intel Core i7-10750H Processor</h4></li>
+                                        <li><h4>16 GB DDR4 3200MHz SDRAM</h4></li>
+                                        <li><h4>Android 4.4 KitKat OS</h4></li>
+                                        <li><h4>1000 Hz Report Rate</h4></li>
+                                    </ul>
+                                </div>
+                                <!-- Product Color -->
+                                <div class="mb-5 productview__color">
+                                    <label for="">Color: </label>
+                                    <select name="" id="">
+                                        <option value="">Light Blue</option>
+                                        <option value="">White</option>
+                                        <option value="">Green</option>
+                                        <option value="">Blue</option>
+                                        <option value="">Magenta</option>
+                                    </select>
+                                </div>
+                                <!-- PRODUCT PRICE -->
+                                <div class="mb-6 productview__price">
+                                    <h2 class="text-3xl font-semibold text-gray-800">2,450৳</h2>
+                                </div>
+                                <!-- Qty and cart btn -->
+                                <div class="flex productview__cart">
+                                    <div class="mr-3 qty-input">
+                                        <button
+                                            class="qty-count qty-count--minus"
+                                            data-action="minus"
+                                            type="button"
+                                        >
+                                            -
+                                        </button>
+                                        <input
+                                            class="product-qty"
+                                            type="number"
+                                            name="product-qty"
+                                            min="0"
+                                            max="10"
+                                            value="1"
                                         />
-                                    </a>
-                                    <a href="#">
-                                        <img class="w-28" src="./dist/img/product/product2.jpg" />
-                                    </a>
-                                    <a href="#">
-                                        <img class="w-28" src="./dist/img/product/product3.jpg" />
-                                    </a>
-                                </picture>
+                                        <button
+                                            class="qty-count qty-count--add"
+                                            data-action="add"
+                                            type="button"
+                                        >
+                                            +
+                                        </button>
+                                    </div>
+                                    <a href="#" class="w-40 mr-3 button productview__cart--btn"
+                                        ><i class="pr-1 fas fa-cart-arrow-down"></i> ADD TO CART</a
+                                    >
+
+                                    <a
+                                        href="#"
+                                        class="bg-green-500 w-36 button productview__wishlist--btn"
+                                        ><i class="pr-1 far fa-heart"></i> ADD TO WISHLIST</a
+                                    >
+                                </div>
+                                <!-- Social Share -->
+                                <div class="my-6 productview__social">
+                                    <label for="">Share This Post: </label>
+                                    <div class="">
+                                        <a href="#" title="Facebook">
+                                            <span><i class="fab fa-xs fa-facebook-f"></i></span>
+                                        </a>
+                                        <a href="#" title="whatsapp">
+                                            <span><i class="fab fa-xs fa-whatsapp"></i></span>
+                                        </a>
+                                        <a href="#" title="twitter">
+                                            <span><i class="fab fa-xs fa-twitter"></i></span>
+                                        </a>
+                                        <a href="#" title="youtube">
+                                            <span><i class="fab fa-xs fa-youtube"></i></span>
+                                        </a>
+                                        <a href="#" title="linkedin">
+                                            <span><i class="fab fa-xs fa-linkedin-in"></i></span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="w-7/12 productview__info">
-                            <div class="productview__name">
-                                <a href="#" class="inline-block mb-3 text-sm text-gray-600"
-                                    >Headphones</a
-                                >
-                                <h2>
-                                    A4 TECH BLOODY B500N MECHA LIKE SWITCH BACKLIT GAMING KEYBOARD
-                                </h2>
-                            </div>
-                            <div class="mb-3 product__ratings">
-                                <span class="color-yellow"><i class="fa fa-star"></i></span>
-                                <span class="color-yellow"><i class="fa fa-star"></i></span>
-                                <span class="color-yellow"><i class="fa fa-star"></i></span>
-                                <span class="color-yellow"><i class="fa fa-star"></i></span>
-                                <span class="color-yellow"><i class="fa fa-star"></i></span>
-                                <a href="#" class="pl-2 text-sm text-gray-500"
-                                    >( <i class="pr-1 fas fa-pen-nib fa-xs"></i> Write a review )</a
-                                >
-                            </div>
-                            <div class="mb-6 productview__tags">
-                                <span
-                                    >Status: <strong class="text-green-600">In Stock</strong></span
-                                >
-                                <span>Brand: <strong class="text-blue-550">A4Tech</strong></span>
-                                <span>Model: <strong>B500N</strong></span>
-                                <span>Sku: <strong>ST5484</strong></span>
-                            </div>
-
-                            <div class="mb-7 productview__desc">
+                        <!-- Product Desc & Reviews -->
+                        <div class="mt-20 mb-8 productviewinfo">
+                            <!--Product Nav -->
+                            <div class="productviewinfo__nav">
                                 <ul>
-                                    <li><h4>MECHA-LIKE Switch with Red Backlight</h4></li>
-                                    <li><h4>Intel Core i7-10750H Processor</h4></li>
-                                    <li><h4>16 GB DDR4 3200MHz SDRAM</h4></li>
-                                    <li><h4>Android 4.4 KitKat OS</h4></li>
-                                    <li><h4>1000 Hz Report Rate</h4></li>
+                                    <li>
+                                        <a href="#productviewinfo__specification">Specification</a>
+                                    </li>
+                                    <li><a href="#productviewinfo__description">Descripton</a></li>
+                                    <li><a href="#productviewinfo__reviews">Reviews (0)</a></li>
                                 </ul>
                             </div>
-                            <div class="mb-5 productview__color">
-                                <label for="">Color: </label>
-                                <select name="" id="">
-                                    <option value="">Light Blue</option>
-                                    <option value="">White</option>
-                                    <option value="">Green</option>
-                                    <option value="">Blue</option>
-                                    <option value="">Magenta</option>
-                                </select>
-                            </div>
-                            <div class="mb-6 productview__price">
-                                <h2 class="text-3xl font-semibold text-gray-800">2,450৳</h2>
-                            </div>
 
-                            <div class="flex productview__cart">
-                                <div class="mr-3 qty-input">
-                                    <button
-                                        class="qty-count qty-count--minus"
-                                        data-action="minus"
-                                        type="button"
-                                    >
-                                        -
-                                    </button>
-                                    <input
-                                        class="product-qty"
-                                        type="number"
-                                        name="product-qty"
-                                        min="0"
-                                        max="10"
-                                        value="1"
-                                    />
-                                    <button
-                                        class="qty-count qty-count--add"
-                                        data-action="add"
-                                        type="button"
-                                    >
-                                        +
-                                    </button>
+                            <div class="p-5 productviewinfo__wrapper">
+                                <!-- Product Specification -->
+                                <div
+                                    class="productviewinfo__specification"
+                                    id="productviewinfo__specification"
+                                >
+                                    <div>
+                                        <h2 class="mb-6 text-2xl font-semibold text-gray-900">
+                                            Specification
+                                        </h2>
+                                    </div>
+                                    <div class="productviewinfo__specif">
+                                        <div class="productviewinfo__specif--wrap">
+                                            <div class="productviewinfo__specif--head">
+                                                <h2>Basic Information</h2>
+                                            </div>
+                                            <div class="productviewinfo__specif--items">
+                                                <div class="productviewinfo__specif--item">
+                                                    <h2 class="w-1/5">Processor</h2>
+
+                                                    <p class="w-4/5">
+                                                        Intel Core i7-10750H (2.6 GHz base
+                                                        frequency, up to 5.0 GHz
+                                                    </p>
+                                                </div>
+                                                <div class="productviewinfo__specif--item">
+                                                    <h2 class="w-1/5">Display</h2>
+
+                                                    <p class="w-4/5">
+                                                        15.6" diagonal, 4K UHD (3840 x 2160), IPS,
+                                                        narrow bezel, anti-glare, 400 nits, 72% NTSC
+                                                    </p>
+                                                </div>
+                                                <div class="productviewinfo__specif--item">
+                                                    <h2 class="w-1/5">Memory</h2>
+
+                                                    <p class="w-4/5">
+                                                        16 GB DDR4-3200 SDRAM (onboard)
+                                                    </p>
+                                                </div>
+                                                <div class="productviewinfo__specif--item">
+                                                    <h2 class="w-1/5">Operating System</h2>
+
+                                                    <p class="w-4/5">Windows 10 Pro 64</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="productviewinfo__specif--wrap">
+                                            <div class="productviewinfo__specif--head">
+                                                <h2>Input Devices</h2>
+                                            </div>
+                                            <div class="productviewinfo__specif--items">
+                                                <div class="productviewinfo__specif--item">
+                                                    <h2 class="w-1/5">Keyboard</h2>
+
+                                                    <p class="w-4/5">
+                                                        HP Premium Quiet Keyboard – spill-resistant,
+                                                        full-size, backlit keyboard
+                                                    </p>
+                                                </div>
+                                                <div class="productviewinfo__specif--item">
+                                                    <h2 class="w-1/5">WebCam</h2>
+
+                                                    <p class="w-4/5">720p HD IR camera</p>
+                                                </div>
+                                                <div class="productviewinfo__specif--item">
+                                                    <h2 class="w-1/5">Card Reader</h2>
+
+                                                    <p class="w-4/5">
+                                                        1 x SD 4.0 media card reader
+                                                    </p>
+                                                </div>
+                                                <div class="productviewinfo__specif--item">
+                                                    <h2 class="w-1/5">Warranty</h2>
+
+                                                    <p class="w-4/5">
+                                                        3 Year (Battery, Adapter 1 Year)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <a href="#" class="w-40 mr-3 button productview__cart--btn"
-                                    ><i class="pr-1 fas fa-cart-arrow-down"></i> ADD TO CART</a
-                                >
 
-                                <a
-                                    href="#"
-                                    class="bg-green-500 w-36 button productview__wishlist--btn"
-                                    ><i class="pr-1 far fa-heart"></i> ADD TO WISHLIST</a
+                                <!-- Product Description -->
+                                <div
+                                    class="mt-6 productviewinfo__description"
+                                    id="productviewinfo__description"
                                 >
-                            </div>
+                                    <div>
+                                        <h2 class="mb-6 text-xl font-semibold text-gray-900">
+                                            Description
+                                        </h2>
+                                    </div>
+                                    <div class="productviewinfo__specif">
+                                        <div class="productviewinfo__desc--wrap">
+                                            <div class="productviewinfo__specif--head">
+                                                <h2>
+                                                    HP ZBook Create G7 Core i7 10th Gen 1TB SSD RTX
+                                                    2070 8GB Graphics 15.6" UHD Laptop
+                                                </h2>
+                                            </div>
+                                            <div class="productviewinfo__desc">
+                                                <p class="px-4 leading-7 text-gray-800">
+                                                    The exclusive HP ZBook Create G7 15.6" UHD
+                                                    Laptop comes with Intel Core i7-10750H (2.6 GHz
+                                                    base frequency, up to 5.0 GHz with Intel Turbo
+                                                    Boost Technology, 12 MB L3 cache, 6 cores), 16
+                                                    GB DDR4-3200 SDRAM (onboard), 1 TB PCIe NVMe TLC
+                                                    SED SSD, Integrated: Intel UHD Graphics,
+                                                    Discrete: NVIDIA GeForce RTX 2070 with Max-Q
+                                                    Design (8 GB GDDR6 dedicated) and Windows 10 Pro
+                                                    64 operating system. Introducing HP smallest 15"
+                                                    laptop for creating and gaming that comes with a
+                                                    nearly borderless screen and long-lasting
+                                                    battery life into a lightweight,
+                                                    scratch-resistant aluminum frame. This laptop
+                                                    featured with 15.6" diagonal, 4K UHD (3840 x
+                                                    2160), IPS, narrow bezel, anti-glare, 400 nits,
+                                                    72% NTSC, HP Long Life 6-cell, 83 Wh Li-ion
+                                                    polymer Battery, HP Fingerprint Sensor, 200 W
+                                                    Slim Smart external AC power adapter, 720p HD IR
+                                                    camera, HP Premium Quiet Keyboard –
+                                                    spill-resistant, full-size, backlit keyboard
+                                                    with programmable key. Here, Intel Wi-Fi 6 AX201
+                                                    (2x2) and Bluetooth 5 combo, non-vPro Network &
+                                                    Wireless Connectivity are also available. This
+                                                    laptop also has 2 x SuperSpeed USB Type-C 10Gbps
+                                                    signaling rate, 1 x SuperSpeed USB Type-A 5Gbps
+                                                    signaling rate (charging), 1 x headphone/
+                                                    microphone combo, 1 x SD 4.0 media card reader
+                                                    Ports, Connectors & Slots. nearly borderless
+                                                    screen and long-lasting battery life into a
+                                                    lightweight, scratch-resistant aluminum frame.
+                                                    The latest HP ZBook Create G7 Core i7 10th Gen
+                                                    RTX 2070 8GB Graphics 15.6" UHD Laptop has a 03
+                                                    Year International Limited Warranty (Terms &
+                                                    Conditions Apply As Per HP).
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                            <div class="my-6 productview__social">
-                                <label for="">Share This Post: </label>
-                                <div class="">
-                                    <a href="#" title="Facebook">
-                                        <span><i class="fab fa-xs fa-facebook-f"></i></span>
-                                    </a>
-                                    <a href="#" title="whatsapp">
-                                        <span><i class="fab fa-xs fa-whatsapp"></i></span>
-                                    </a>
-                                    <a href="#" title="twitter">
-                                        <span><i class="fab fa-xs fa-twitter"></i></span>
-                                    </a>
-                                    <a href="#" title="youtube">
-                                        <span><i class="fab fa-xs fa-youtube"></i></span>
-                                    </a>
-                                    <a href="#" title="linkedin">
-                                        <span><i class="fab fa-xs fa-linkedin-in"></i></span>
-                                    </a>
+                                <!-- Product Review -->
+                                <div
+                                    class="mt-6 productviewinfo__reviews"
+                                    id="productviewinfo__reviews"
+                                >
+                                    <div>
+                                        <h2 class="mb-6 text-xl font-semibold text-gray-900">
+                                            Reviews (2)
+                                        </h2>
+                                    </div>
+                                    <div class="productviewinfo__review">
+                                        <div class="flex productviewinfo__review--wrap">
+                                            <div class="w-3/5 productviewinfo__review--items">
+                                                <div class="mb-5 productviewinfo__review--item">
+                                                    <div class="product__ratings">
+                                                        <span class="color-yellow"
+                                                            ><i class="fa fa-star"></i
+                                                        ></span>
+                                                        <span class="color-yellow"
+                                                            ><i class="fa fa-star"></i
+                                                        ></span>
+                                                        <span class="color-yellow"
+                                                            ><i class="fa fa-star"></i
+                                                        ></span>
+                                                        <span class="color-yellow"
+                                                            ><i class="fa fa-star"></i
+                                                        ></span>
+                                                        <span class="color-yellow"
+                                                            ><i class="fa fa-star"></i
+                                                        ></span>
+                                                    </div>
+                                                    <p class="mb-2 text-base text-gray-800">
+                                                        Fusce vitae nibh mi. Integer posuere, libero
+                                                        et ullamcorper facitum ante et euismod.
+                                                    </p>
+                                                    <div class="flex items-center">
+                                                        <strong class="text-gray-800"
+                                                            >John Doe</strong
+                                                        >
+                                                        <p class="text-sm text-gray-600">
+                                                            &nbsp; - April 3, 2022
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-5 productviewinfo__review--item">
+                                                    <div class="product__ratings">
+                                                        <span class="color-yellow"
+                                                            ><i class="fa fa-star"></i
+                                                        ></span>
+                                                        <span class="color-yellow"
+                                                            ><i class="fa fa-star"></i
+                                                        ></span>
+                                                        <span class="color-yellow"
+                                                            ><i class="fa fa-star"></i
+                                                        ></span>
+                                                        <span class="color-yellow"
+                                                            ><i class="fa fa-star"></i
+                                                        ></span>
+                                                        <span class="color-yellow"
+                                                            ><i class="fa fa-star"></i
+                                                        ></span>
+                                                    </div>
+                                                    <p class="mb-2 text-base text-gray-800">
+                                                        Fusce vitae nibh mi. Integer posuere, libero
+                                                        et ullamcorper facilisis, enim eros
+                                                        tincidunt orci, eget vestibulum sapien nisi
+                                                        ut leo. Cras finibus vel est ut mollis.
+                                                        Donec luctus condimentum ante et euismod.
+                                                    </p>
+                                                    <div class="flex items-center">
+                                                        <strong class="text-gray-800"
+                                                            >John Doe</strong
+                                                        >
+                                                        <p class="text-sm text-gray-600">
+                                                            &nbsp; - April 3, 2022
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-2/5 productviewinfo__review--form">
+                                                <div class="flex mb-4">
+                                                    <label for="" class="w-1/4">Your Rating</label>
+                                                    <div class="w-3/4 product__ratings">
+                                                        <span class="color-yellow"
+                                                            ><i class="fa fa-star"></i
+                                                        ></span>
+                                                        <span class="color-yellow"
+                                                            ><i class="fa fa-star"></i
+                                                        ></span>
+                                                        <span class="color-yellow"
+                                                            ><i class="fa fa-star"></i
+                                                        ></span>
+                                                        <span class="color-yellow"
+                                                            ><i class="fa fa-star"></i
+                                                        ></span>
+                                                        <span class="color-yellow"
+                                                            ><i class="fa fa-star"></i
+                                                        ></span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex mb-4">
+                                                    <label class="w-1/4" for="">Your Review</label>
+                                                    <input type="text" class="w-3/4" />
+                                                </div>
+                                                <div class="flex mb-4">
+                                                    <label class="w-1/4" for="">Name</label>
+                                                    <textarea
+                                                        name=""
+                                                        class="w-3/4"
+                                                        id=""
+                                                        cols="30"
+                                                        rows="5"
+                                                    ></textarea>
+                                                </div>
+                                                <div class="flex mb-4">
+                                                    <label class="w-1/4" for="">Email</label>
+                                                    <input type="text" class="w-3/4" />
+                                                </div>
+                                                <div class="flex mb-4">
+                                                    <label class="w-1/4" for=""></label>
+                                                    <a href="#" class="w-3/4 ml-2 button"
+                                                        >Add Review</a
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- RIght Side -->
                     <div class="w-2/12 productview__right">
                         <div class="productview__facilitys">
                             <div class="flex items-center productview__facility">
@@ -469,7 +837,7 @@
         <!-- ******** Footer START ******** -->
         <footer class="mt-20 mb-8 footer">
             <div class="container px-2 mx-auto">
-                <div class="footer__container">
+                <div class="flex-col footer__container md:flex-row">
                     <!-- Left Side -->
                     <div class="footer__info">
                         <picture class="inline-block mb-6 footer__info--logo">
@@ -529,9 +897,9 @@
                     </div>
                     <!-- Right Side -->
                     <div class="footer__linkup">
-                        <div class="px-4 footer__linkup-wrap">
+                        <div class="px-1 md:px-4 footer__linkup-wrap">
                             <div class="footer__linkup--items">
-                                <div class="w-1/4 footer__linkup--item">
+                                <div class="w-2/4 md:w-1/4 footer__linkup--item">
                                     <h6 class="mb-6">Information</h6>
                                     <div class="">
                                         <ul>
@@ -542,7 +910,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="w-1/4 footer__linkup--item">
+                                <div class="w-2/4 md:w-1/4 footer__linkup--item">
                                     <h6 class="mb-6">My Account</h6>
                                     <div class="">
                                         <ul>
@@ -553,7 +921,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="w-1/4 footer__linkup--item">
+                                <div class="w-2/4 md:w-1/4 footer__linkup--item">
                                     <h6 class="mb-6">Information</h6>
                                     <div class="">
                                         <ul>
@@ -564,7 +932,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="w-1/4 footer__linkup--item">
+                                <div class="w-2/4 md:w-1/4 footer__linkup--item">
                                     <h6 class="mb-6">Customer Service</h6>
                                     <div class="">
                                         <ul>
@@ -577,7 +945,7 @@
                                 </div>
                             </div>
                             <div class="footer__linkup--category">
-                                <div class="footer__linkup--category-wrap">
+                                <div class="mb-3 footer__linkup--category-wrap md:mb-0">
                                     <p><strong>Address:</strong></p>
                                     <ul>
                                         <li><a href="#">Order</a></li>
@@ -588,7 +956,7 @@
                                         <li><a href="#">Accessories</a></li>
                                     </ul>
                                 </div>
-                                <div class="footer__linkup--category-wrap">
+                                <div class="mb-3 footer__linkup--category-wrap md:mb-0">
                                     <p><strong>Headphones:</strong></p>
                                     <ul>
                                         <li><a href="#">Order</a></li>
@@ -602,7 +970,7 @@
                                         <li><a href="#">Accessories</a></li>
                                     </ul>
                                 </div>
-                                <div class="footer__linkup--category-wrap">
+                                <div class="mb-3 footer__linkup--category-wrap md:mb-0">
                                     <p><strong>Computers:</strong></p>
                                     <ul>
                                         <li><a href="#">Order</a></li>
@@ -621,9 +989,9 @@
                 </div>
 
                 <div
-                    class="flex items-center justify-between pt-6 pb-2 mt-6 border-t border-gray-300  footer__bottom"
+                    class="flex flex-col items-center justify-between pt-6 pb-2 mt-1 border-t border-gray-300  md:mt-5 md:flex-row footer__bottom"
                 >
-                    <div class="footer__copyright">
+                    <div class="mb-3 footer__copyright md:mb-0">
                         <p>
                             ©2021 Copyright <b>SevenTech</b> Made With by
                             <a href="www.softarch.com"><b>SoftArch</b></a>
