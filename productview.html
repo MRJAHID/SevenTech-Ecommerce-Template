@@ -257,12 +257,12 @@
         <!-- ******** Product View  Start ******** -->
         <main class="my-8 productview">
             <div class="container px-2 mx-auto">
-                <div class="flex productview__wrapper">
+                <div class="flex flex-col md:flex-row productview__wrapper">
                     <!-- Left Side-->
-                    <div class="flex flex-col w-10/12 productview__left">
+                    <div class="flex flex-col w-full md:w-10/12 productview__left">
                         <!-- Product Information -->
-                        <div class="flex">
-                            <div class="w-5/12 productview__photo">
+                        <div class="flex flex-col md:flex-row">
+                            <div class="w-full mb-4 md:w-5/12 productview__photo md:mb-0">
                                 <!-- Product Main Photo -->
                                 <div class="productview__photo--main">
                                     <picture class="">
@@ -297,7 +297,7 @@
                                     </picture>
                                 </div>
                             </div>
-                            <div class="w-7/12 productview__info">
+                            <div class="w-full md:w-7/12 productview__info">
                                 <div class="productview__name">
                                     <!-- Product Category -->
                                     <a href="#" class="inline-block mb-3 text-sm text-gray-600"
@@ -391,7 +391,8 @@
                                     <a
                                         href="#"
                                         class="bg-green-500 w-36 button productview__wishlist--btn"
-                                        ><i class="pr-1 far fa-heart"></i> ADD TO WISHLIST</a
+                                        ><i class="pr-1 far fa-heart"></i>
+                                        <span class="hidden md:inline">ADD TO WISHLIST</span></a
                                     >
                                 </div>
                                 <!-- Social Share -->
@@ -418,7 +419,7 @@
                             </div>
                         </div>
                         <!-- Product Desc & Reviews -->
-                        <div class="mt-20 mb-8 productviewinfo">
+                        <div class="mt-6 mb-8 md:mt-20 productviewinfo">
                             <!--Product Nav -->
                             <div class="productviewinfo__nav">
                                 <ul>
@@ -430,14 +431,16 @@
                                 </ul>
                             </div>
 
-                            <div class="p-5 productviewinfo__wrapper">
+                            <div class="p-1 md:p-5 productviewinfo__wrapper">
                                 <!-- Product Specification -->
                                 <div
                                     class="productviewinfo__specification"
                                     id="productviewinfo__specification"
                                 >
                                     <div>
-                                        <h2 class="mb-6 text-2xl font-semibold text-gray-900">
+                                        <h2
+                                            class="mb-2 text-lg font-semibold text-gray-900  md:text-2xl md:mb-6"
+                                        >
                                             Specification
                                         </h2>
                                     </div>
@@ -448,32 +451,34 @@
                                             </div>
                                             <div class="productviewinfo__specif--items">
                                                 <div class="productviewinfo__specif--item">
-                                                    <h2 class="w-1/5">Processor</h2>
+                                                    <h2 class="w-3/12 md:w-1/5">Processor</h2>
 
-                                                    <p class="w-4/5">
+                                                    <p class="w-9/12 md:w-4/5">
                                                         Intel Core i7-10750H (2.6 GHz base
                                                         frequency, up to 5.0 GHz
                                                     </p>
                                                 </div>
                                                 <div class="productviewinfo__specif--item">
-                                                    <h2 class="w-1/5">Display</h2>
+                                                    <h2 class="w-3/12 md:w-1/5">Display</h2>
 
-                                                    <p class="w-4/5">
+                                                    <p class="w-9/12 md:w-4/5">
                                                         15.6" diagonal, 4K UHD (3840 x 2160), IPS,
                                                         narrow bezel, anti-glare, 400 nits, 72% NTSC
                                                     </p>
                                                 </div>
                                                 <div class="productviewinfo__specif--item">
-                                                    <h2 class="w-1/5">Memory</h2>
+                                                    <h2 class="w-3/12 md:w-1/5">Memory</h2>
 
-                                                    <p class="w-4/5">
+                                                    <p class="w-9/12 md:w-4/5">
                                                         16 GB DDR4-3200 SDRAM (onboard)
                                                     </p>
                                                 </div>
                                                 <div class="productviewinfo__specif--item">
-                                                    <h2 class="w-1/5">Operating System</h2>
+                                                    <h2 class="w-3/12 md:w-1/5">
+                                                        Operating System
+                                                    </h2>
 
-                                                    <p class="w-4/5">Windows 10 Pro 64</p>
+                                                    <p class="w-9/12 md:w-4/5">Windows 10 Pro 64</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -483,29 +488,29 @@
                                             </div>
                                             <div class="productviewinfo__specif--items">
                                                 <div class="productviewinfo__specif--item">
-                                                    <h2 class="w-1/5">Keyboard</h2>
+                                                    <h2 class="w-3/12 md:w-1/5">Keyboard</h2>
 
-                                                    <p class="w-4/5">
+                                                    <p class="w-9/12 md:w-4/5">
                                                         HP Premium Quiet Keyboard – spill-resistant,
                                                         full-size, backlit keyboard
                                                     </p>
                                                 </div>
                                                 <div class="productviewinfo__specif--item">
-                                                    <h2 class="w-1/5">WebCam</h2>
+                                                    <h2 class="w-3/12 md:w-1/5">WebCam</h2>
 
-                                                    <p class="w-4/5">720p HD IR camera</p>
+                                                    <p class="w-9/12 md:w-4/5">720p HD IR camera</p>
                                                 </div>
                                                 <div class="productviewinfo__specif--item">
-                                                    <h2 class="w-1/5">Card Reader</h2>
+                                                    <h2 class="w-3/12 md:w-1/5">Card Reader</h2>
 
-                                                    <p class="w-4/5">
+                                                    <p class="w-9/12 md:w-4/5">
                                                         1 x SD 4.0 media card reader
                                                     </p>
                                                 </div>
                                                 <div class="productviewinfo__specif--item">
-                                                    <h2 class="w-1/5">Warranty</h2>
+                                                    <h2 class="w-3/12 md:w-1/5">Warranty</h2>
 
-                                                    <p class="w-4/5">
+                                                    <p class="w-9/12 md:w-4/5">
                                                         3 Year (Battery, Adapter 1 Year)
                                                     </p>
                                                 </div>
@@ -520,7 +525,9 @@
                                     id="productviewinfo__description"
                                 >
                                     <div>
-                                        <h2 class="mb-6 text-xl font-semibold text-gray-900">
+                                        <h2
+                                            class="mb-3 text-lg font-semibold text-gray-900  md:mb-6 md:text-xl"
+                                        >
                                             Description
                                         </h2>
                                     </div>
@@ -533,7 +540,7 @@
                                                 </h2>
                                             </div>
                                             <div class="productviewinfo__desc">
-                                                <p class="px-4 leading-7 text-gray-800">
+                                                <p class="px-1 leading-7 text-gray-800 md:px-4">
                                                     The exclusive HP ZBook Create G7 15.6" UHD
                                                     Laptop comes with Intel Core i7-10750H (2.6 GHz
                                                     base frequency, up to 5.0 GHz with Intel Turbo
@@ -580,13 +587,19 @@
                                     id="productviewinfo__reviews"
                                 >
                                     <div>
-                                        <h2 class="mb-6 text-xl font-semibold text-gray-900">
+                                        <h2
+                                            class="mb-4 text-lg font-semibold text-gray-900  md:mb-6 md:text-xl"
+                                        >
                                             Reviews (2)
                                         </h2>
                                     </div>
                                     <div class="productviewinfo__review">
-                                        <div class="flex productviewinfo__review--wrap">
-                                            <div class="w-3/5 productviewinfo__review--items">
+                                        <div
+                                            class="flex flex-col-reverse  md:flex-row productviewinfo__review--wrap"
+                                        >
+                                            <div
+                                                class="w-full  md:w-3/5 productviewinfo__review--items"
+                                            >
                                                 <div class="mb-5 productviewinfo__review--item">
                                                     <div class="product__ratings">
                                                         <span class="color-yellow"
@@ -653,7 +666,9 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="w-2/5 productviewinfo__review--form">
+                                            <div
+                                                class="w-full  md:w-2/5 productviewinfo__review--form"
+                                            >
                                                 <div class="flex mb-4">
                                                     <label for="" class="w-1/4">Your Rating</label>
                                                     <div class="w-3/4 product__ratings">
@@ -706,7 +721,7 @@
                         </div>
                     </div>
                     <!-- RIght Side -->
-                    <div class="w-2/12 productview__right">
+                    <div class="w-full md:w-2/12 productview__right">
                         <div class="productview__facilitys">
                             <div class="flex items-center productview__facility">
                                 <span><i class="fas fa-truck"></i></span>

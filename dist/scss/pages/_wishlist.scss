@@ -37,6 +37,9 @@
                 border-radius: 0 23px 23px 0;
                 font-weight: 600;
                 @include transitionsm;
+                @media (max-width: 767px) {
+                    font-size: 0.8rem;
+                }
                 &:hover {
                     @include hoverbtn;
                 }

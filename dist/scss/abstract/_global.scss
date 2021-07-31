@@ -86,3 +86,9 @@ body::-webkit-scrollbar-thumb {
         #767777ce 100%
     );
 }
+
+@media (min-width: 768px) {
+    .display-revert {
+        display: revert;
+    }
+}

@@ -2,6 +2,9 @@
     &__wrapper {
         max-width: 63rem;
         margin: 5rem auto;
+        @media (max-width: 767px) {
+            margin: 1.5rem auto;
+        }
     }
     &__menu {
         &.active a {

@@ -48,10 +48,12 @@ $breadcrumb-border: $primary-color;
             position: relative;
             margin-left: -$spacer;
             margin-right: $spacer;
-            // text-transform: uppercase;
         }
         [itemprop='name'] {
             padding: 0.1rem 0.5rem 0.1em 2rem;
+            @media (max-width: 767px) {
+                padding: 0.1rem 0.5rem 0.1em 1rem;
+            }
         }
         a.breadcrumb {
             text-decoration: none;

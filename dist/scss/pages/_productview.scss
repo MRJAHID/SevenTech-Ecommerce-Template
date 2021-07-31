@@ -31,6 +31,9 @@
     }
     &__info {
         padding: 0.5rem 1rem;
+        @media (max-width: 767px) {
+            padding: 0.5rem;
+        }
         .productview__name {
             h2 {
                 color: $bg;
@@ -68,10 +71,16 @@
         .productview__cart--btn {
             background-color: $primary-color;
             @include hoverbtncolor;
+            @media (max-width: 767px) {
+                width: auto;
+            }
         }
         .productview__wishlist--btn {
             background-color: #14a753;
             @include hoverbtncolor;
+            @media (max-width: 767px) {
+                width: auto;
+            }
         }
 
         .productview__color {
@@ -154,6 +163,9 @@
                 li {
                     margin-right: 2rem;
                     position: relative;
+                    @media (max-width: 767px) {
+                        margin-right: 1rem;
+                    }
                     a {
                         font-weight: 600;
                         color: $bg;
@@ -183,15 +195,25 @@
                 padding: 0 1rem;
                 margin-bottom: 1rem;
                 background-color: rgba(55, 73, 187, 0.05);
+                @media (max-width: 767px) {
+                    padding: 0rem;
+                }
                 h2 {
                     color: $primary-color;
                     font-size: 1.1rem;
                     font-weight: 600;
                     padding: 0.7rem 0;
+                    @media (max-width: 767px) {
+                        font-size: 0.975rem;
+                        padding: 0.4rem 0;
+                    }
                 }
             }
             &--wrap {
                 padding: 0.2rem 1rem;
+                @media (max-width: 767px) {
+                    padding: 0.2rem 0rem;
+                }
             }
             &--item {
                 padding: 0 1rem;
@@ -199,23 +221,39 @@
                 padding-bottom: 8px;
                 margin-bottom: 8px;
                 border-bottom: 1px solid $smoke;
+                @media (max-width: 767px) {
+                    padding: 0rem;
+                }
                 h2 {
                     color: #696868;
                     font-size: 1rem;
+                    @media (max-width: 767px) {
+                        font-size: 0.9rem;
+                    }
                 }
                 p {
                     color: $bg;
                     font-weight: normal;
                     font-size: 0.9rem;
+                    @media (max-width: 767px) {
+                        font-size: 0.85rem;
+                    }
                 }
             }
         }
         &__review--form {
             padding-left: 1rem;
+            @media (max-width: 767px) {
+                padding-left: 0rem;
+                margin-bottom: 1rem;
+            }
             label {
                 color: $bg;
                 font-weight: 600;
                 font-size: 1rem;
+                @media (max-width: 767px) {
+                    font-size: 0.83rem;
+                }
             }
             textarea,
             input {

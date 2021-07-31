@@ -259,11 +259,13 @@
             <div class="container px-2 mx-auto">
                 <!-- Table -->
                 <div class="wishlist__wrapper">
-                    <h2 class="mb-8 text-3xl font-normal text-gray-800">Shopping Cart</h2>
+                    <h2 class="mb-4 text-xl font-normal text-gray-800 md:mb-8 md:text-3xl">
+                        Shopping Cart
+                    </h2>
                     <table class="min-w-full table-auto">
                         <thead class="justify-between">
                             <tr class="bg-gray-200">
-                                <th class="px-6 py-2">
+                                <th class="hidden px-6 py-2 display-revert">
                                     <span class="text-sm text-gray-800 capitalize">IMAGE</span>
                                 </th>
                                 <th class="px-6 py-2 text-left">
@@ -271,13 +273,13 @@
                                         >PRODUCT NAME</span
                                     >
                                 </th>
-                                <th class="px-6 py-2">
+                                <th class="hidden px-6 py-2 display-revert">
                                     <span class="text-sm text-gray-800 capitalize">MODEL</span>
                                 </th>
-                                <th class="px-6 py-2">
+                                <th class="hidden px-6 py-2 display-revert">
                                     <span class="text-sm text-gray-800 capitalize">QUANTITY</span>
                                 </th>
-                                <th class="px-6 py-2">
+                                <th class="hidden px-6 py-2 display-revert">
                                     <span class="text-sm text-gray-800 capitalize">PRICE</span>
                                 </th>
                                 <th class="px-6 py-2">
@@ -287,7 +289,7 @@
                         </thead>
                         <tbody class="bg-gray-200">
                             <tr class="bg-white border-2 border-gray-200">
-                                <td class="flex items-center px-3 py-2">
+                                <td class="items-center hidden px-3 py-2 display-revert">
                                     <img
                                         class="object-cover w-12 h-12 mx-auto rounded"
                                         src="https://www.techlandbd.com/image/cache/catalog/Laptop/ASUS/Rog/g15-g513qm/black/asus-rog-strix-g15-g513qm-black-laptop-1-250x250.jpg"
@@ -295,16 +297,59 @@
                                     />
                                 </td>
                                 <td class="px-3 py-2">
-                                    <span class="text-base font-normal text-left text-gray-700"
+                                    <span
+                                        class="inline-block mb-2 text-sm font-semibold text-left text-gray-800  md:text-base md:font-normal md:mb-0"
                                         >AMD Ryzen 3 3300X 4 Core 8 Thread AM4 Processor</span
                                     >
+                                    <!-- For Mobile Start -->
+                                    <h3 class="mb-1 text-gray-800 md:hidden">
+                                        Model: &nbsp;
+                                        <span class="text-sm font-semibold text-left text-gray-800"
+                                            >Ryzen 3 3300X</span
+                                        >
+                                    </h3>
+
+                                    <h3 class="mb-1 text-gray-800 md:hidden">
+                                        Price: &nbsp;
+                                        <span class="text-sm font-semibold text-left text-gray-800"
+                                            >14,400৳</span
+                                        >
+                                    </h3>
+                                    <h3 class="flex mb-1 text-gray-800 md:hidden">
+                                        Qty: &nbsp;
+                                        <div class="pl-1 qty-input">
+                                            <button
+                                                class="qty-count qty-count--minus"
+                                                data-action="minus"
+                                                type="button"
+                                            >
+                                                -
+                                            </button>
+                                            <input
+                                                class="product-qty"
+                                                type="number"
+                                                name="product-qty"
+                                                min="0"
+                                                max="10"
+                                                value="1"
+                                            />
+                                            <button
+                                                class="qty-count qty-count--add"
+                                                data-action="add"
+                                                type="button"
+                                            >
+                                                +
+                                            </button>
+                                        </div>
+                                    </h3>
+                                    <!-- For Mobile End -->
                                 </td>
-                                <td class="px-3 py-2 text-center">
+                                <td class="hidden px-3 py-2 text-center display-revert">
                                     <span class="text-base font-normal text-left text-gray-700"
                                         >Ryzen 3 3300X</span
                                     >
                                 </td>
-                                <td class="px-3 py-2 text-center">
+                                <td class="hidden px-3 py-2 text-center display-revert">
                                     <div class="qty-input">
                                         <button
                                             class="qty-count qty-count--minus"
@@ -330,279 +375,7 @@
                                         </button>
                                     </div>
                                 </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-normal text-left text-gray-700"
-                                        >14,400৳</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2">
-                                    <div class="flex items-center justify-center">
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 mr-2 text-white bg-blue-500 rounded  hover:text-white hover:bg-gray-800"
-                                            title="Edit Product"
-                                        >
-                                            <i class="far fa-edit fa-xs"></i>
-                                        </a>
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 text-white bg-red-400 rounded  hover:text-white hover:bg-red-600"
-                                            title="Remove Product"
-                                        >
-                                            <i class="fas fa-trash-alt fa-xs"></i>
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="bg-white border-2 border-gray-200">
-                                <td class="flex items-center px-3 py-2">
-                                    <img
-                                        class="object-cover w-12 h-12 mx-auto rounded"
-                                        src="https://www.techlandbd.com/image/cache/catalog/Laptop/ASUS/Rog/g15-g513qm/black/asus-rog-strix-g15-g513qm-black-laptop-1-250x250.jpg"
-                                        alt="Product Image"
-                                    />
-                                </td>
-                                <td class="px-3 py-2">
-                                    <span class="text-base font-normal text-left text-gray-700"
-                                        >AMD Ryzen 3 3300X 4 Core 8 Thread AM4 Processor</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-normal text-left text-gray-700"
-                                        >Ryzen 3 3300X</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <div class="qty-input">
-                                        <button
-                                            class="qty-count qty-count--minus"
-                                            data-action="minus"
-                                            type="button"
-                                        >
-                                            -
-                                        </button>
-                                        <input
-                                            class="product-qty"
-                                            type="number"
-                                            name="product-qty"
-                                            min="0"
-                                            max="10"
-                                            value="1"
-                                        />
-                                        <button
-                                            class="qty-count qty-count--add"
-                                            data-action="add"
-                                            type="button"
-                                        >
-                                            +
-                                        </button>
-                                    </div>
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-normal text-left text-gray-700"
-                                        >14,400৳</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2">
-                                    <div class="flex items-center justify-center">
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 mr-2 text-white bg-blue-500 rounded  hover:text-white hover:bg-gray-800"
-                                            title="Edit Product"
-                                        >
-                                            <i class="far fa-edit fa-xs"></i>
-                                        </a>
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 text-white bg-red-400 rounded  hover:text-white hover:bg-red-600"
-                                            title="Remove Product"
-                                        >
-                                            <i class="fas fa-trash-alt fa-xs"></i>
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="bg-white border-2 border-gray-200">
-                                <td class="flex items-center px-3 py-2">
-                                    <img
-                                        class="object-cover w-12 h-12 mx-auto rounded"
-                                        src="https://www.techlandbd.com/image/cache/catalog/Laptop/ASUS/Rog/g15-g513qm/black/asus-rog-strix-g15-g513qm-black-laptop-1-250x250.jpg"
-                                        alt="Product Image"
-                                    />
-                                </td>
-                                <td class="px-3 py-2">
-                                    <span class="text-base font-normal text-left text-gray-700"
-                                        >AMD Ryzen 3 3300X 4 Core 8 Thread AM4 Processor</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-normal text-left text-gray-700"
-                                        >Ryzen 3 3300X</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <div class="qty-input">
-                                        <button
-                                            class="qty-count qty-count--minus"
-                                            data-action="minus"
-                                            type="button"
-                                        >
-                                            -
-                                        </button>
-                                        <input
-                                            class="product-qty"
-                                            type="number"
-                                            name="product-qty"
-                                            min="0"
-                                            max="10"
-                                            value="1"
-                                        />
-                                        <button
-                                            class="qty-count qty-count--add"
-                                            data-action="add"
-                                            type="button"
-                                        >
-                                            +
-                                        </button>
-                                    </div>
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-normal text-left text-gray-700"
-                                        >14,400৳</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2">
-                                    <div class="flex items-center justify-center">
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 mr-2 text-white bg-blue-500 rounded  hover:text-white hover:bg-gray-800"
-                                            title="Edit Product"
-                                        >
-                                            <i class="far fa-edit fa-xs"></i>
-                                        </a>
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 text-white bg-red-400 rounded  hover:text-white hover:bg-red-600"
-                                            title="Remove Product"
-                                        >
-                                            <i class="fas fa-trash-alt fa-xs"></i>
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="bg-white border-2 border-gray-200">
-                                <td class="flex items-center px-3 py-2">
-                                    <img
-                                        class="object-cover w-12 h-12 mx-auto rounded"
-                                        src="https://www.techlandbd.com/image/cache/catalog/Laptop/ASUS/Rog/g15-g513qm/black/asus-rog-strix-g15-g513qm-black-laptop-1-250x250.jpg"
-                                        alt="Product Image"
-                                    />
-                                </td>
-                                <td class="px-3 py-2">
-                                    <span class="text-base font-normal text-left text-gray-700"
-                                        >AMD Ryzen 3 3300X 4 Core 8 Thread AM4 Processor</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-normal text-left text-gray-700"
-                                        >Ryzen 3 3300X</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <div class="qty-input">
-                                        <button
-                                            class="qty-count qty-count--minus"
-                                            data-action="minus"
-                                            type="button"
-                                        >
-                                            -
-                                        </button>
-                                        <input
-                                            class="product-qty"
-                                            type="number"
-                                            name="product-qty"
-                                            min="0"
-                                            max="10"
-                                            value="1"
-                                        />
-                                        <button
-                                            class="qty-count qty-count--add"
-                                            data-action="add"
-                                            type="button"
-                                        >
-                                            +
-                                        </button>
-                                    </div>
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-normal text-left text-gray-700"
-                                        >14,400৳</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2">
-                                    <div class="flex items-center justify-center">
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 mr-2 text-white bg-blue-500 rounded  hover:text-white hover:bg-gray-800"
-                                            title="Edit Product"
-                                        >
-                                            <i class="far fa-edit fa-xs"></i>
-                                        </a>
-                                        <a
-                                            href="#"
-                                            class="flex items-center justify-center w-8 h-8 text-white bg-red-400 rounded  hover:text-white hover:bg-red-600"
-                                            title="Remove Product"
-                                        >
-                                            <i class="fas fa-trash-alt fa-xs"></i>
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="bg-white border-2 border-gray-200">
-                                <td class="flex items-center px-3 py-2">
-                                    <img
-                                        class="object-cover w-12 h-12 mx-auto rounded"
-                                        src="https://www.techlandbd.com/image/cache/catalog/Laptop/ASUS/Rog/g15-g513qm/black/asus-rog-strix-g15-g513qm-black-laptop-1-250x250.jpg"
-                                        alt="Product Image"
-                                    />
-                                </td>
-                                <td class="px-3 py-2">
-                                    <span class="text-base font-normal text-left text-gray-700"
-                                        >AMD Ryzen 3 3300X 4 Core 8 Thread AM4 Processor</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <span class="text-base font-normal text-left text-gray-700"
-                                        >Ryzen 3 3300X</span
-                                    >
-                                </td>
-                                <td class="px-3 py-2 text-center">
-                                    <div class="qty-input">
-                                        <button
-                                            class="qty-count qty-count--minus"
-                                            data-action="minus"
-                                            type="button"
-                                        >
-                                            -
-                                        </button>
-                                        <input
-                                            class="product-qty"
-                                            type="number"
-                                            name="product-qty"
-                                            min="0"
-                                            max="10"
-                                            value="1"
-                                        />
-                                        <button
-                                            class="qty-count qty-count--add"
-                                            data-action="add"
-                                            type="button"
-                                        >
-                                            +
-                                        </button>
-                                    </div>
-                                </td>
-                                <td class="px-3 py-2 text-center">
+                                <td class="hidden px-3 py-2 text-center display-revert">
                                     <span class="text-base font-normal text-left text-gray-700"
                                         >14,400৳</span
                                     >
@@ -632,16 +405,16 @@
                     <div class="w-full my-8 text-right">
                         <a
                             href="#"
-                            class="px-3 py-2 text-sm font-semibold text-white bg-blue-700  hover:bg-gray-800 hover:text-white"
+                            class="px-3 py-2 text-sm font-semibold text-white  bg-blue-550 hover:bg-gray-800 hover:text-white"
                             >UPDATE CART
                         </a>
                     </div>
                 </div>
                 <!--Total and coupon  -->
                 <div class="wishlist__total">
-                    <div class="flex justify-between wishlist__total-area">
+                    <div class="flex flex-col justify-between md:flex-row wishlist__total-area">
                         <!-- Coupon -->
-                        <div class="w-1/2 pr-8 wishlist__coupon">
+                        <div class="w-full pr-0 mb-3 md:w-1/2 md:mb-0 md:pr-8 wishlist__coupon">
                             <h3>COUPON</h3>
                             <div class="wishlist__coupon--inner">
                                 <p>Enter your coupon code if you have one.</p>
@@ -652,7 +425,7 @@
                             </div>
                         </div>
                         <!-- Total -->
-                        <div class="w-1/2 pl-8 wishlist__prices">
+                        <div class="w-full pl-0 md:w-1/2 md:pl-8 wishlist__prices">
                             <h3>CART TOTALS</h3>
                             <div class="wishlist__prices--inner">
                                 <div class="wishlist__total">
@@ -670,7 +443,7 @@
                                 <div class="wishlist__total" style="justify-content: flex-end">
                                     <a
                                         href="checkout.html"
-                                        class="px-3 py-2 text-sm font-semibold text-white bg-blue-700  hover:bg-gray-800 hover:text-white"
+                                        class="px-3 py-2 text-sm font-semibold text-white  bg-blue-550 hover:bg-gray-800 hover:text-white"
                                         >Proceed <i class="pl-1 fas fa-long-arrow-alt-right"></i
                                     ></a>
                                 </div>

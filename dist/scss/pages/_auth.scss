@@ -1,5 +1,8 @@
 .auth {
     padding: 5rem 0;
+    @media (max-width: 767px) {
+        padding: 2rem 0;
+    }
     &__wrapper {
         max-width: 63.9375rem;
         margin: 0 auto;

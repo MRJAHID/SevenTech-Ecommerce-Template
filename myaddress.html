@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Address | Seven Tech</title>
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <!-- FontAwesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+        <!-- Tailwind Css -->
+        <link rel="stylesheet" href="./dist/css/tailwind.css" />
+        <!-- Main Css -->
+        <link rel="stylesheet" href="./dist/css/index.css" />
+    </head>
+    <body class="antialiased">
+        <!-- ******** Header START ******** -->
+        <header class="header">
+            <!-- mobile menu START -->
+            <div class="menu_container">
+                <div class="over_lay"></div>
+                <div class="list_items_container">
+                    <p class="close_btn">X</p>
+                    <nav class="mobilemenu">
+                        <ul>
+                            <li><a href="#profile">Profile</a></li>
+                            <li><a href="#message">Messages</a></li>
+                            <li class="sub-menu">
+                                <a href="#settings"
+                                    >Settings
+                                    <div class="fa fa-caret-down right"></div
+                                ></a>
+                                <ul>
+                                    <li><a href="#settings">Account</a></li>
+                                    <li><a href="#settings">Profile</a></li>
+                                    <li>
+                                        <a href="#settings">Secruity &amp; Privacy</a>
+                                    </li>
+                                    <li><a href="#settings">Password</a></li>
+                                    <li><a href="#settings">Notification</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="#message"
+                                    >Help
+                                    <div class="fa fa-caret-down right"></div
+                                ></a>
+                                <ul>
+                                    <li><a href="#settings">FAQ's</a></li>
+                                    <li><a href="#settings">Submit a Ticket</a></li>
+                                    <li><a href="#settings">Network Status</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#message">Logout</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- mobile menu END -->
+
+            <!-- Header Top START -->
+            <section class="hidden header__top md:block">
+                <div class="container px-2 mx-auto">
+                    <div class="flex items-center justify-between py-3 header__top-container">
+                        <div class="header__top-left">
+                            <p>Customer Service: (800) 123 456 789</p>
+                        </div>
+                        <div class="header__top-right">
+                            <ul>
+                                <li>
+                                    <a href="#"
+                                        ><span><i class="pr-2 fas fa-map-marker-alt"></i></span>
+                                        Store Locator</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><i class="pr-2 fas fa-truck"></i></span> Track Your
+                                        Order
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><span><i class="pr-2 fas fa-dollar-sign"></i></span> USD</a
+                                    >
+                                    <ul>
+                                        <li><a href="#">TAKA</a></li>
+                                        <li><a href="#">RUPEEE</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="auth.html"
+                                        ><span><i class="pr-2 far fa-user"></i></span>Register
+                                        <span class="text-gray-500">or</span> sign in
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Header Top END -->
+
+            <!-- Header Main START -->
+            <section class="header-main">
+                <div class="container px-2 mx-auto">
+                    <div
+                        class="flex items-center justify-between py-3  md:py-6 header-main__container"
+                    >
+                        <div class="flex items-center w-1/4 header-main__logo">
+                            <!-- Logo -->
+                            <a href="index.html" class="hidden mr-10 md:block">
+                                <img src="./dist/img/logo.png" alt="Logo" class="w-28" />
+                            </a>
+                            <!-- Menu Btn -->
+                            <a href="#" class="pl-4 btn_container md:hidden">
+                                <span><i class="fas fa-bars"></i></span>
+                            </a>
+                        </div>
+                        <div class="w-1/4 md:w-2/4 header-main__search md:block">
+                            <!-- Logo -->
+                            <a href="index.html" class="mr-10 md:hidden">
+                                <img src="./dist/img/logo.png" alt="Logo" class="w-24" />
+                            </a>
+                            <form action="" class="hidden md:flex">
+                                <input type="text" name="" id="" placeholder="Search Here" />
+                                <div class="header-main__search--btn">
+                                    <button type="button"><i class="fas fa-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="w-1/4 header-main__icons">
+                            <div class="w-full header-main__icons-container">
+                                <ul class="flex items-center justify-end">
+                                    <li class="hidden md:block">
+                                        <a href="#" title="Compare"
+                                            ><img src="./dist/icons/compare.svg" alt="compare"
+                                        /></a>
+                                    </li>
+                                    <li class="hidden md:block">
+                                        <a href="#" class="relative" title="Wishlist"
+                                            ><i class="far fa-heart"></i>
+                                            <span
+                                                style="background-color: #005dab"
+                                                class="absolute flex items-center justify-center w-5 h-5 text-xs font-normal text-white rounded-full  left-2 top-2"
+                                                >1</span
+                                            ></a
+                                        >
+                                    </li>
+                                    <li class="md:hidden">
+                                        <img
+                                            class="inline-block"
+                                            src="./dist/icons/lnr-magnifier.svg"
+                                            alt="Cart"
+                                        />
+                                    </li>
+                                    <li>
+                                        <a href="#" class="relative" title="Cart">
+                                            <img
+                                                class="inline-block"
+                                                src="./dist/icons/cart.svg"
+                                                alt="Cart"
+                                            />
+                                            <span
+                                                style="background-color: #005dab"
+                                                class="absolute flex items-center justify-center w-5 h-5 text-xs font-normal text-white rounded-full  left-2 top-2"
+                                                >2</span
+                                            >
+                                        </a>
+                                        <span class="hidden pl-2 font-bold md:inline-block"
+                                            >$1370</span
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Header Main END -->
+
+            <!-- Header Menu START -->
+            <nav class="hidden header-menu md:block">
+                <div class="container px-2 mx-auto">
+                    <div class="flex items-center py-2 header-menu__container">
+                        <div class="header-menu-left">
+                            <span class="flex header-menu-left__wrap">
+                                <img
+                                    src="./dist/icons/align-left.svg"
+                                    class="pr-3"
+                                    alt="Menu Left"
+                                />
+                                <p>All Departments</p>
+                            </span>
+
+                            <nav class="header__categories">
+                                <ul>
+                                    <li><a href="#"> Computer & Accessories </a></li>
+                                    <li><a href="#"> Cameras, Audio & Video </a></li>
+                                    <li><a href="#"> Mobile & Tablets </a></li>
+                                    <li><a href="#"> Movies, Music & Video </a></li>
+                                    <li><a href="#"> TV & Radio </a></li>
+                                    <li><a href="#"> All Laptop </a></li>
+                                    <li><a href="#"> Watches & Eyewear </a></li>
+                                    <li><a href="#"> Car, Motorbike & Industrial </a></li>
+                                    <li><a href="#"> All Accessories </a></li>
+                                    <li><a href="#"> Top 100 Offers </a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="ml-6 header-menu-right">
+                            <nav class="header-menu-right__wrap">
+                                <ul class="top_menu">
+                                    <li>
+                                        <a href="#">Desktop</a>
+                                        <ul class="top_menu-scnd">
+                                            <li><a href="#">All Laptop</a></li>
+                                            <li><a href="#">Gaming Laptop</a></li>
+                                            <li><a href="#">Ultrabook Laptop</a></li>
+                                            <li><a href="#">Laptop Bag</a></li>
+                                            <li><a href="#">Laptop Accessories</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Laptop</a>
+                                        <ul class="top_menu-scnd">
+                                            <li><a href="#">All Laptop</a></li>
+                                            <li><a href="#">Gaming Laptop</a></li>
+                                            <li>
+                                                <a href="#">Ultrabook Laptop</a>
+                                                <ul class="top_menu-third">
+                                                    <li><a href="#">All Laptop</a></li>
+                                                    <li><a href="#">Gaming Laptop</a></li>
+                                                    <li><a href="#">Ultrabook Laptop</a></li>
+                                                    <li><a href="#">Laptop Bag</a></li>
+                                                    <li><a href="#">Laptop Accessories</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Laptop Bag</a></li>
+                                            <li><a href="#">Laptop Accessories</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Mobile</a></li>
+                                    <li><a href="#">Tablet</a></li>
+                                    <li><a href="#">Camera</a></li>
+                                    <li><a href="#">Gadget</a></li>
+                                    <li><a href="#">Networking</a></li>
+                                    <li><a href="#">Accessoriess</a></li>
+                                    <li><a href="#">Software</a></li>
+                                    <li><a href="#">Security</a></li>
+                                    <li><a href="#">Component</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Header Menu END -->
+        </header>
+        <!-- ******** Header END ******** -->
+
+        <!--  ******** Breadcrumb START ******** -->
+        <div class="container px-2 py-6 mx-auto breadcrumb-wrapper">
+            <ol class="breadcrumbs breadcrumbs--one">
+                <li>
+                    <a class="breadcrumb" href="#">
+                        <span itemprop="name">
+                            <i class="pr-1 fas fa-home"></i>
+                            <span>Home</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="breadcrumb" href="#">
+                        <span itemprop="name">
+                            <i class="pr-1 fas fa-anchor fa-sm"></i>
+                            <span>Account</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <span class="breadcrumb">
+                        <span itemprop="name">Address</span>
+                    </span>
+                </li>
+            </ol>
+        </div>
+        <!-- ******** Breadcrumb END ******** -->
+
+        <!-- ******** Account  Start ******** -->
+        <main class="my-8 account">
+            <div class="container px-2 mx-auto">
+                <div class="flex flex-col px-2 account__wrapper md:px-0">
+                    <!-- Header -->
+                    <div class="flex items-center mb-12 account__header">
+                        <img
+                            class="w-24 h-24 rounded-full account__profile--img"
+                            src="https://cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_960_720.png"
+                            alt="Profile Image"
+                        />
+                        <div class="pl-3">
+                            <span class="inline-block mb-2 text-sm text-gray-500">Hello,</span>
+                            <h2 class="text-xl font-semibold text-gray-800 md:text-2xl">
+                                MR JAHID
+                            </h2>
+                        </div>
+                    </div>
+                    <!-- Account Menu -->
+                    <div class="flex flex-wrap pb-4 mb-4 border-b border-gray-300 b account__menus">
+                        <div class="mr-6 account__menu">
+                            <a href="orderhistory.html" class="text-base text-gray-600">
+                                <span class="pr-1"><i class="fas fa-book-open"></i></span>
+                                <span class="">Orders</span>
+                            </a>
+                        </div>
+                        <div class="mr-6 account__menu active">
+                            <a href="profile.html" class="text-base text-gray-600">
+                                <span class="pr-1"><i class="fas fa-user"></i></span>
+                                <span class="">Edit Profile</span>
+                            </a>
+                        </div>
+                        <div class="mr-6 account__menu">
+                            <a href="myaddress.html" class="text-base text-gray-600">
+                                <span class="pr-1"><i class="fas fa-book"></i></span>
+                                <span class="">Address</span>
+                            </a>
+                        </div>
+                        <div class="mr-6 account__menu">
+                            <a href="passchange.html" class="text-base text-gray-600">
+                                <span class="pr-1"><i class="fas fa-lock"></i></span>
+                                <span class="">Change Password</span>
+                            </a>
+                        </div>
+                        <div class="mr-6 account__menu">
+                            <a href="wishlist.html" class="text-base text-gray-600">
+                                <span class="pr-1"><i class="fas fa-heart"></i></span>
+                                <span class="">Wishlist</span>
+                            </a>
+                        </div>
+                        <div class="mr-6 account__menu">
+                            <a href="#" class="text-base text-gray-600">
+                                <span class="pr-1"><i class="fas fa-wallet"></i></span>
+                                <span class="">Transactions</span>
+                            </a>
+                        </div>
+                        <div class="mr-6 account__menu">
+                            <a href="#" class="text-base text-gray-600">
+                                <span class="pr-1"><i class="fas fa-book"></i></span>
+                                <span class="">Address</span>
+                            </a>
+                        </div>
+                        <div class="mr-6 account__menu">
+                            <a href="#" class="text-base text-gray-600">
+                                <span class="pr-1"><i class="fas fa-book"></i></span>
+                                <span class="">Address</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Profile Info  -->
+                    <section class="profile my-7">
+                        <div class="account__title">
+                            <legend>YOUR DELIVERY ADDRESS</legend>
+                        </div>
+                        <div class="checkout__deliver--address" style="padding-left: 0px">
+                            <div class="checkout__deliver--items">
+                                <div class="checkout__deliver--item active">
+                                    <div class="flex items-center justify-between">
+                                        <h3>Khulna</h3>
+                                        <a href="#"><i class="far fa-edit fa-xs"></i></a>
+                                    </div>
+                                    <p>
+                                        Hamidur Rohoman Stadium, Jhenaidah Sadar , Jhenaidah, Khulna
+                                    </p>
+                                    <p class="pt-2">Mobile: 01875865301</p>
+                                </div>
+                                <div class="checkout__deliver--item">
+                                    <div class="flex items-center justify-between">
+                                        <h3>Dhaka</h3>
+                                        <a href="#"><i class="far fa-edit fa-xs"></i></a>
+                                    </div>
+                                    <p>
+                                        BDR camp er pichon gate, near BGB school, Professor para,
+                                        Dhaka
+                                    </p>
+                                    <p class="pt-2">Mobile: 01875865301</p>
+                                </div>
+                                <div class="bg-gray-100 checkout__deliver--item">
+                                    <div class="flex flex-col items-center justify-center h-full">
+                                        <a href="#"><i class="fas fa-plus"></i></a>
+                                        <h5 class="pt-3">Add Address</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <!-- ******** Account  END ******** -->
+
+        <!-- ******** Footer START ******** -->
+        <footer class="mt-20 mb-8 footer">
+            <div class="container px-2 mx-auto">
+                <div class="flex-col footer__container md:flex-row">
+                    <!-- Left Side -->
+                    <div class="footer__info">
+                        <picture class="inline-block mb-6 footer__info--logo">
+                            <img src="./dist/img/logo.png" class="w-28" alt="Footer Logo" />
+                        </picture>
+
+                        <article class="footer__info--body">
+                            <p class="mb-6">
+                                Claritas est etiam processus dynamicus, qui sequitur mutationem
+                                consuetudium lectorum. Mirum est notare quam littera gothica, quam
+                                nunc putamus parum claram.
+                            </p>
+                            <p class="mb-5">
+                                <span
+                                    ><strong>Address</strong>: 123 Main Street, Anytown, CA 12345
+                                    USA.</span
+                                >
+                                <br />
+                                <span>
+                                    <strong>Number Phone</strong>: (800) 123 456 - (800) 123
+                                    456.</span
+                                >
+                                <br />
+                                <span> <strong>Address Email</strong>: support@seventech.com</span>
+                            </p>
+                        </article>
+
+                        <div class="footer__info--social">
+                            <ul>
+                                <li>
+                                    <a href="#" class="footer__facebook">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__twitter">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__instagram">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__youtube">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__linkedin">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Right Side -->
+                    <div class="footer__linkup">
+                        <div class="px-1 md:px-4 footer__linkup-wrap">
+                            <div class="footer__linkup--items">
+                                <div class="w-2/4 md:w-1/4 footer__linkup--item">
+                                    <h6 class="mb-6">Information</h6>
+                                    <div class="">
+                                        <ul>
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="invoice.html">Invoice</a></li>
+                                            <li><a href="#">Privacy Policy</a></li>
+                                            <li><a href="#">Terms & Condition</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="w-2/4 md:w-1/4 footer__linkup--item">
+                                    <h6 class="mb-6">My Account</h6>
+                                    <div class="">
+                                        <ul>
+                                            <li><a href="aboutus.html">About Us</a></li>
+                                            <li><a href="account.html">Account</a></li>
+                                            <li><a href="orderhistory.html">Order History</a></li>
+                                            <li><a href="#">Terms & Condition</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="w-2/4 md:w-1/4 footer__linkup--item">
+                                    <h6 class="mb-6">Information</h6>
+                                    <div class="">
+                                        <ul>
+                                            <li><a href="wishlist.html">Wishlist</a></li>
+                                            <li><a href="checkout.html">Checkout</a></li>
+                                            <li><a href="productview.html">Product View</a></li>
+                                            <li><a href="productlist.html">Product List</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="w-2/4 md:w-1/4 footer__linkup--item">
+                                    <h6 class="mb-6">Customer Service</h6>
+                                    <div class="">
+                                        <ul>
+                                            <li><a href="cart.html">Cart</a></li>
+                                            <li><a href="profile.html">Account</a></li>
+                                            <li><a href="#">Privacy Policy</a></li>
+                                            <li><a href="#">Terms & Condition</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer__linkup--category">
+                                <div class="mb-3 footer__linkup--category-wrap md:mb-0">
+                                    <p><strong>Address:</strong></p>
+                                    <ul>
+                                        <li><a href="#">Order</a></li>
+                                        <li><a href="#">Affiliate</a></li>
+                                        <li><a href="#">Marketing</a></li>
+                                        <li><a href="#">Sourcing</a></li>
+                                        <li><a href="#">Gadgets</a></li>
+                                        <li><a href="#">Accessories</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mb-3 footer__linkup--category-wrap md:mb-0">
+                                    <p><strong>Headphones:</strong></p>
+                                    <ul>
+                                        <li><a href="#">Order</a></li>
+                                        <li><a href="#">Affiliate</a></li>
+                                        <li><a href="#">Marketing</a></li>
+                                        <li><a href="#">Sourcing</a></li>
+                                        <li><a href="#">Gadgets</a></li>
+                                        <li><a href="#">Marketing</a></li>
+                                        <li><a href="#">Sourcing</a></li>
+                                        <li><a href="#">Gadgets</a></li>
+                                        <li><a href="#">Accessories</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mb-3 footer__linkup--category-wrap md:mb-0">
+                                    <p><strong>Computers:</strong></p>
+                                    <ul>
+                                        <li><a href="#">Order</a></li>
+                                        <li><a href="#">Affiliate</a></li>
+                                        <li><a href="#">Marketing</a></li>
+                                        <li><a href="#">Sourcing</a></li>
+                                        <li><a href="#">Gadgets</a></li>
+                                        <li><a href="#">Sourcing</a></li>
+                                        <li><a href="#">Gadgets</a></li>
+                                        <li><a href="#">Accessories</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col items-center justify-between pt-6 pb-2 mt-1 border-t border-gray-300  md:mt-5 md:flex-row footer__bottom"
+                >
+                    <div class="mb-3 footer__copyright md:mb-0">
+                        <p>
+                            ©2021 Copyright <b>SevenTech</b> Made With by
+                            <a href="www.softarch.com"><b>SoftArch</b></a>
+                        </p>
+                    </div>
+                    <div class="footer__payment">
+                        <picture>
+                            <img src="./dist/img/footerpay.png" alt="Payment Methods" />
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ******** Footer END ******** -->
+
+        <!-- Main Js -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./dist/js/main.js"></script>
+    </body>
+</html>

@@ -229,9 +229,9 @@
         <!--  ******** login START ******** -->
         <main class="auth bg-blue-50">
             <div class="container px-2 mx-auto">
-                <div class="flex shadow-xl auth__wrapper">
+                <div class="flex flex-col shadow-xl md:flex-row auth__wrapper">
                     <!-- Left Side -->
-                    <div class="w-1/2 bg-blue-300 auth__left">
+                    <div class="hidden w-full bg-blue-300 display-revert md:w-1/2 auth__left">
                         <img
                             src="./dist/img/login.svg"
                             class="w-full h-full mx-auto"
@@ -239,19 +239,21 @@
                         />
                     </div>
                     <!-- Right Side -->
-                    <div class="w-1/2 p-12 bg-white auth__right">
+                    <div class="w-full p-3 bg-white md:p-12 md:w-1/2 auth__right">
                         <!-- Header -->
                         <div class="auth__right--wrapper">
-                            <h2 class="mb-1 text-3xl font-bold text-gray-800">Get Started</h2>
+                            <h2 class="mb-1 text-xl font-bold text-gray-800 md:text-3xl">
+                                Get Started
+                            </h2>
                             <p class="text-sm text-gray-600">
                                 Already have an account?
                                 <a href="#" class="text-blue-550">Log in</a>
                             </p>
                             <!-- SignUp With -->
-                            <div class="flex mt-4 mb-12">
+                            <div class="flex flex-col mt-4 mb-12 md:flex-row">
                                 <a
                                     href="#"
-                                    class="flex items-center p-3 mr-3 text-gray-800 border border-gray-400 rounded-md "
+                                    class="flex items-center p-3 mb-2 mr-0 text-gray-800 border border-gray-400 rounded-md  md:mr-3 md:mb-0"
                                 >
                                     <i class="pr-2 fab fa-google text-blue-550"></i>
                                     <span class="">Sign up with Google</span>

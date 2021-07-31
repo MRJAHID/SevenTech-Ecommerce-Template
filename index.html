@@ -289,9 +289,9 @@
         <!-- ******** Upcoming Product Start ******** -->
         <section class="my-8 upcoming">
             <div class="container px-2 mx-auto">
-                <div class="flex upcoming__wrapper">
+                <div class="flex flex-col md:flex-row upcoming__wrapper">
                     <!-- Upcoming left side -->
-                    <div class="w-3/4">
+                    <div class="w-full md:w-3/4">
                         <!-- Products -->
                         <section class="product-panel">
                             <div class="flex flex-col product-panel__container">
@@ -678,12 +678,12 @@
                         </div>
                     </div>
                     <!-- Right SIde Banner -->
-                    <div class="w-1/4 upcoming__banner--right">
+                    <div class="w-full md:w-1/4 upcoming__banner--right">
                         <div class="upcoming__banner--right_wrapper">
                             <a href="#">
                                 <img
                                     src="./dist/img/banner/bannerlong1.jpg"
-                                    class="ml-auto"
+                                    class="mx-auto md:ml-auto"
                                     alt="Long Banner"
                                 />
                             </a>
@@ -1145,8 +1145,10 @@
         <!-- ******** Baneer Section START ******** -->
         <section class="py-5 banner">
             <div class="container px-2 mx-auto">
-                <div class="flex items-center justify-between w-full banner__wrapper">
-                    <div class="w-1/2 banner__left">
+                <div
+                    class="flex flex-col items-center justify-between w-full  md:flex-row banner__wrapper"
+                >
+                    <div class="w-full md:w-1/2 banner__left">
                         <a href="#" class="w-full banner__left--wrap">
                             <img
                                 src="./dist/img/banner/banner1.jpg"
@@ -1155,7 +1157,7 @@
                             />
                         </a>
                     </div>
-                    <div class="w-1/2 banner__right">
+                    <div class="w-full md:w-1/2 banner__right">
                         <a href="#" class="w-full banner__right--wrap">
                             <img
                                 src="./dist/img/banner/banner2.jpg"
