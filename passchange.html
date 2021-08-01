@@ -25,6 +25,330 @@
     <body class="antialiased">
         <!-- ******** Header START ******** -->
         <header class="header">
+            <!-- Small Cart START -->
+            <div id="small_cart">
+                <div>
+                    <!-- Small Cart Container -->
+                    <div id="small_cart-container">
+                        <div
+                            id="small_cart-container1"
+                            class="fixed top-0 right-0 w-full h-full md:w-2/3 lg:w-1/3 bg-gray-50 small-cart-close cart-push"
+                            style="
+                                z-index: 1000;
+                                box-shadow: 0 4px 10px rgb(0 0 0 / 30%);
+                                right: -500px;
+                            "
+                        >
+                            <!-- Cart Head -->
+                            <div
+                                id="cart"
+                                class="text-white bg-gray-800 cart-heading-container"
+                                style="min-height: 8%; height: 8%"
+                            >
+                                <div
+                                    id="cart_head"
+                                    class="flex items-center justify-between h-full"
+                                >
+                                    <div class="w-8/12">
+                                        <h5 class="px-3 font-semibold shopping_heading">
+                                            YOUR CART
+                                        </h5>
+                                    </div>
+                                    <div
+                                        class="flex justify-end w-4/12 mr-5 font-normal text-white hover:text-red-500"
+                                    >
+                                        <p class="cursor-pointer cart-close">
+                                            <i class="fas fa-times"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Cart container -->
+                            <div class="overflow-y-auto cart-body-container" style="height: 77%">
+                                <div class="flex flex-col items-between">
+                                    <!-- Product Item -->
+                                    <div
+                                        class="flex px-1 py-1 my-1 border-b border-gray-300 cart-section"
+                                    >
+                                        <div class="flex items-center w-3/12">
+                                            <a href="#"
+                                                ><img
+                                                    class="w-full"
+                                                    src="./dist/img/product/product1.jpg"
+                                            /></a>
+                                        </div>
+                                        <div class="w-9/12 ml-1 leading-normal">
+                                            <div class="flex items-start justify-between mb-1">
+                                                <a href="#"
+                                                    ><p title="" class="font-normal text-gray-900">
+                                                        Olive Net Embroidery Designer Lehenga
+                                                        Embroidery Designer Lehenga
+                                                    </p></a
+                                                >
+                                            </div>
+                                            <!-- Size  Color-->
+                                            <p class="mb-1 text-sm text-gray-800">Size: M</p>
+
+                                            <!-- Product -->
+                                            <div class="flex justify-between">
+                                                <div class="flex items-center w-10/12">
+                                                    <p
+                                                        class="pr-2 text-sm font-semibold text-gray-800 "
+                                                    >
+                                                        138,000৳
+                                                    </p>
+                                                    <p
+                                                        class="pr-2 text-xs font-semibold text-gray-500 "
+                                                    >
+                                                        X
+                                                    </p>
+                                                    <p
+                                                        class="pr-2 text-sm font-normal text-gray-800 "
+                                                    >
+                                                        1
+                                                    </p>
+                                                    <p class="pr-2 text-gray-800">=</p>
+                                                    <!-- total -->
+                                                    <p class="text-sm font-semibold text-gray-800">
+                                                        138,000৳
+                                                    </p>
+                                                </div>
+
+                                                <!-- remove -->
+                                                <div class="flex items-center justify-end w-2/12">
+                                                    <p
+                                                        class="text-lg font-semibold text-gray-700 cursor-pointer hover:text-red-500"
+                                                    >
+                                                        <i class="mr-2 far fa-trash-alt fa-xs"></i>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Product Item -->
+                                    <div
+                                        class="flex px-1 py-1 my-1 border-b border-gray-300 cart-section"
+                                    >
+                                        <div class="flex items-center w-3/12">
+                                            <a href="#"
+                                                ><img
+                                                    class="w-full"
+                                                    src="./dist/img/product/product2.jpg"
+                                            /></a>
+                                        </div>
+                                        <div class="w-9/12 ml-1 leading-normal">
+                                            <div class="flex items-start justify-between mb-1">
+                                                <a href="#"
+                                                    ><p title="" class="font-normal text-gray-900">
+                                                        Designer Lehenga Embroidery Designer Lehenga
+                                                    </p></a
+                                                >
+                                            </div>
+                                            <!-- Size  Color-->
+                                            <p class="mb-1 text-sm text-gray-800">Size: M</p>
+
+                                            <!-- Product -->
+                                            <div class="flex justify-between">
+                                                <div class="flex items-center w-10/12">
+                                                    <p
+                                                        class="pr-2 text-sm font-semibold text-gray-800 "
+                                                    >
+                                                        138,000৳
+                                                    </p>
+                                                    <p
+                                                        class="pr-2 text-xs font-semibold text-gray-500 "
+                                                    >
+                                                        X
+                                                    </p>
+                                                    <p
+                                                        class="pr-2 text-sm font-normal text-gray-800 "
+                                                    >
+                                                        1
+                                                    </p>
+                                                    <p class="pr-2 text-gray-800">=</p>
+                                                    <!-- total -->
+                                                    <p class="text-sm font-semibold text-gray-800">
+                                                        138,000৳
+                                                    </p>
+                                                </div>
+
+                                                <!-- remove -->
+                                                <div class="flex items-center justify-end w-2/12">
+                                                    <p
+                                                        class="text-lg font-semibold text-gray-700 cursor-pointer hover:text-red-500"
+                                                    >
+                                                        <i class="mr-2 far fa-trash-alt fa-xs"></i>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Product Item -->
+                                    <div
+                                        class="flex px-1 py-1 my-1 border-b border-gray-300 cart-section"
+                                    >
+                                        <div class="flex items-center w-3/12">
+                                            <a href="#"
+                                                ><img
+                                                    class="w-full"
+                                                    src="./dist/img/product/product3.jpg"
+                                            /></a>
+                                        </div>
+                                        <div class="w-9/12 ml-1 leading-normal">
+                                            <div class="flex items-start justify-between mb-1">
+                                                <a href="#"
+                                                    ><p title="" class="font-normal text-gray-900">
+                                                        Lehenga Embroidery Designer Lehenga
+                                                    </p></a
+                                                >
+                                            </div>
+                                            <!-- Size  Color-->
+                                            <p class="mb-1 text-sm text-gray-800">Size: M</p>
+
+                                            <!-- Product -->
+                                            <div class="flex justify-between">
+                                                <div class="flex items-center w-10/12">
+                                                    <p
+                                                        class="pr-2 text-sm font-semibold text-gray-800 "
+                                                    >
+                                                        138,000৳
+                                                    </p>
+                                                    <p
+                                                        class="pr-2 text-xs font-semibold text-gray-500 "
+                                                    >
+                                                        X
+                                                    </p>
+                                                    <p
+                                                        class="pr-2 text-sm font-normal text-gray-800 "
+                                                    >
+                                                        1
+                                                    </p>
+                                                    <p class="pr-2 text-gray-800">=</p>
+                                                    <!-- total -->
+                                                    <p class="text-sm font-semibold text-gray-800">
+                                                        138,000৳
+                                                    </p>
+                                                </div>
+
+                                                <!-- remove -->
+                                                <div class="flex items-center justify-end w-2/12">
+                                                    <p
+                                                        class="text-lg font-semibold text-gray-700 cursor-pointer hover:text-red-500"
+                                                    >
+                                                        <i class="mr-2 far fa-trash-alt fa-xs"></i>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Cart Footer -->
+                            <div
+                                class="cart-checkout-container"
+                                style="min-height: 13%; height: 13%"
+                            >
+                                <div class="flex items-center justify-between h-full">
+                                    <div
+                                        class="flex items-center justify-center w-4/12 h-full border-r border-gray-100 "
+                                    >
+                                        <p
+                                            class="flex flex-col text-base font-normal text-center text-gray-800 capitalize md:text-left md:flex-row"
+                                        >
+                                            Sub-Total
+
+                                            <span class="ml-1 text-base font-semibold text-blue-550"
+                                                >৳ 1840</span
+                                            >
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-center w-4/12 h-full border-r border-gray-100 "
+                                    >
+                                        <p
+                                            class="flex flex-col text-base font-normal text-center text-gray-800 capitalize md:text-left md:flex-row"
+                                        >
+                                            Total
+
+                                            <span class="ml-1 text-base font-semibold text-blue-550"
+                                                >৳ 1840</span
+                                            >
+                                        </p>
+                                    </div>
+                                    <div class="flex items-center justify-center w-4/12 h-full">
+                                        <a href="#" class="small_cart_btn">
+                                            PROCEED
+                                            <span><i class="pl-1 fas fa-chevron-right"></i></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Small Cart Button -->
+                    <div id="small_cart_section_div" class="container fixed shopping-bag-sidebar">
+                        <div
+                            id="SmallCart"
+                            class="flex flex-col items-center justify-between small_cart-container"
+                        >
+                            <span class="flex justify-center small_bag">
+                                <i class="fas fa-cart-arrow-down fa-1x"></i>
+                            </span>
+                            <p
+                                id="small_total_cart"
+                                class="mb-2 text-xs font-semibold text-white uppercase"
+                            >
+                                CART
+                            </p>
+                            <span class="small_cart_counter">1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Small Cart END -->
+
+            <!-- Mobile Menu START -->
+            <div class="menu_container">
+                <div class="over_lay"></div>
+                <div class="list_items_container">
+                    <p class="close_btn"><span>MENU</span> X</p>
+                    <nav class="mobilemenu">
+                        <ul>
+                            <li><a href="#profile">Profile</a></li>
+                            <li><a href="#message">Messages</a></li>
+                            <li class="sub-menu">
+                                <a href="#settings"
+                                    >Settings
+                                    <div class="fa fa-caret-down right"></div
+                                ></a>
+                                <ul>
+                                    <li><a href="#settings">Account</a></li>
+                                    <li><a href="#settings">Profile</a></li>
+                                    <li>
+                                        <a href="#settings">Secruity &amp; Privacy</a>
+                                    </li>
+                                    <li><a href="#settings">Password</a></li>
+                                    <li><a href="#settings">Notification</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="#message"
+                                    >Help
+                                    <div class="fa fa-caret-down right"></div
+                                ></a>
+                                <ul>
+                                    <li><a href="#settings">FAQ's</a></li>
+                                    <li><a href="#settings">Submit a Ticket</a></li>
+                                    <li><a href="#settings">Network Status</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#message">Logout</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- Mobile Menu END -->
+
             <!-- Header Top START -->
             <section class="hidden header__top md:block">
                 <div class="container px-2 mx-auto">
@@ -72,7 +396,7 @@
             <section class="header-main">
                 <div class="container px-2 mx-auto">
                     <div
-                        class="flex items-center justify-between py-3  md:py-6 header-main__container"
+                        class="flex items-center justify-between py-3 md:py-6 header-main__container"
                     >
                         <div class="flex items-center w-1/4 header-main__logo">
                             <!-- Logo -->
@@ -80,7 +404,7 @@
                                 <img src="./dist/img/logo.png" alt="Logo" class="w-28" />
                             </a>
                             <!-- Menu Btn -->
-                            <a href="#" class="pl-4 md:hidden">
+                            <a href="#" class="pl-4 btn_container md:hidden">
                                 <span><i class="fas fa-bars"></i></span>
                             </a>
                         </div>
@@ -109,7 +433,7 @@
                                             ><i class="far fa-heart"></i>
                                             <span
                                                 style="background-color: #005dab"
-                                                class="absolute flex items-center justify-center w-5 h-5 text-xs font-normal text-white rounded-full  left-2 top-2"
+                                                class="absolute flex items-center justify-center w-5 h-5 text-xs font-normal text-white rounded-full left-2 top-2"
                                                 >1</span
                                             ></a
                                         >
@@ -130,7 +454,7 @@
                                             />
                                             <span
                                                 style="background-color: #005dab"
-                                                class="absolute flex items-center justify-center w-5 h-5 text-xs font-normal text-white rounded-full  left-2 top-2"
+                                                class="absolute flex items-center justify-center w-5 h-5 text-xs font-normal text-white rounded-full left-2 top-2"
                                                 >2</span
                                             >
                                         </a>
@@ -162,16 +486,65 @@
 
                             <nav class="header__categories">
                                 <ul>
-                                    <li><a href="#"> Computer & Accessories </a></li>
-                                    <li><a href="#"> Cameras, Audio & Video </a></li>
-                                    <li><a href="#"> Mobile & Tablets </a></li>
-                                    <li><a href="#"> Movies, Music & Video </a></li>
-                                    <li><a href="#"> TV & Radio </a></li>
-                                    <li><a href="#"> All Laptop </a></li>
-                                    <li><a href="#"> Watches & Eyewear </a></li>
-                                    <li><a href="#"> Car, Motorbike & Industrial </a></li>
-                                    <li><a href="#"> All Accessories </a></li>
-                                    <li><a href="#"> Top 100 Offers </a></li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="pr-1 fa-xs fas fa-laptop"></span> Computer
+                                            & Accessories
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="pr-1 fa-xs fas fa-camera"></span> Cameras,
+                                            Audio & Video
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="pr-1 fa-xs fas fa-mobile-alt"></span>
+                                            Mobile & Tablets
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="pr-1 fa-xs fas fa-desktop"></span> Movies,
+                                            Music & Video
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="pr-1 fa-xs fas fa-tv"></span> TV & Radio
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="pr-1 fa-xs fas fa-laptop-house"></span> All
+                                            Laptop
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="pr-1 fa-xs fas fa-eye"></span> Watches &
+                                            Eyewear
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="pr-1 fa-xs fas fa-car"></span> Car, Bike &
+                                            Industrial
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="pr-1 fa-xs fas fa-laptop"></span> All
+                                            Accessories
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="pr-1 fa-xs fas fa-laptop"></span> Top 100
+                                            Offers
+                                        </a>
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
@@ -204,7 +577,16 @@
                                                 </ul>
                                             </li>
                                             <li><a href="#">Laptop Bag</a></li>
-                                            <li><a href="#">Laptop Accessories</a></li>
+                                            <li>
+                                                <a href="#">Laptop Accessories</a>
+                                                <ul class="top_menu-third">
+                                                    <li><a href="#">All Laptop</a></li>
+                                                    <li><a href="#">Gaming Laptop</a></li>
+                                                    <li><a href="#">Ultrabook Laptop</a></li>
+                                                    <li><a href="#">Laptop Bag</a></li>
+                                                    <li><a href="#">Laptop Accessories</a></li>
+                                                </ul>
+                                            </li>
                                         </ul>
                                     </li>
                                     <li><a href="#">Mobile</a></li>
@@ -534,7 +916,7 @@
                 </div>
 
                 <div
-                    class="flex flex-col items-center justify-between pt-6 pb-2 mt-1 border-t border-gray-300  md:mt-5 md:flex-row footer__bottom"
+                    class="flex flex-col items-center justify-between pt-6 pb-2 mt-1 border-t border-gray-300 md:mt-5 md:flex-row footer__bottom"
                 >
                     <div class="mb-3 footer__copyright md:mb-0">
                         <p>
@@ -550,7 +932,10 @@
                 </div>
             </div>
         </footer>
-
         <!-- ******** Footer END ******** -->
+
+        <!-- Main Js -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./dist/js/main.js"></script>
     </body>
 </html>

@@ -22,3 +22,15 @@ $('.sub-menu a').click(function () {
     $(this).parent('.sub-menu').children('ul').slideToggle('100');
     $(this).find('.right').toggleClass('fa-caret-up fa-caret-down');
 });
+
+// Small Cart Show
+$('#small_cart_section_div').click(function () {
+    $('#small_cart-container1').css({
+        right: '0px',
+    });
+});
+$('.cart-close').click(function () {
+    $('#small_cart-container1').css({
+        right: '-500px',
+    });
+});

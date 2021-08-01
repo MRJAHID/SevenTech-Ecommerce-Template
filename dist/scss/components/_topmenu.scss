@@ -43,7 +43,9 @@ ul.top_menu {
 
                 ul.top_menu-third {
                     @extend %dropdown_menu_css;
-                    left: 50%;
+                    left: 100%;
+                    margin-top: 0;
+                    margin-left: 0.5rem;
                 }
             }
         }
@@ -78,6 +80,8 @@ ul.top_menu {
             a {
                 color: $secondary-color;
                 font-size: 0.9rem;
+                display: flex;
+                align-items: center;
                 &:hover {
                     color: $primary-color;
                 }
