@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Address | Seven Tech</title>
+        <title>Transactions History | Seven Tech</title>
         <!-- Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -629,7 +629,7 @@
                 </li>
                 <li>
                     <span class="breadcrumb">
-                        <span itemprop="name">Address</span>
+                        <span itemprop="name">Trx History</span>
                     </span>
                 </li>
             </ol>
@@ -639,7 +639,7 @@
         <!-- ******** Account  Start ******** -->
         <main class="my-8 account">
             <div class="container px-2 mx-auto">
-                <div class="flex flex-col px-2 account__wrapper md:px-0">
+                <div class="flex flex-col px-1 account__wrapper md:px-0">
                     <!-- Header -->
                     <div class="flex items-center mb-12 account__header">
                         <img
@@ -655,7 +655,7 @@
                         </div>
                     </div>
                     <!-- Account Menu -->
-                    <div class="flex flex-wrap pb-4 mb-4 border-b border-gray-300 account__menus">
+                    <div class="flex flex-wrap pb-4 mb-4 border-b border-gray-300 b account__menus">
                         <div class="mr-6 account__menu">
                             <a href="orderhistory.html" class="text-base text-gray-600">
                                 <span class="pr-1"><i class="fas fa-book-open"></i></span>
@@ -668,7 +668,7 @@
                                 <span class="">Edit Profile</span>
                             </a>
                         </div>
-                        <div class="mr-6 account__menu active">
+                        <div class="mr-6 account__menu">
                             <a href="myaddress.html" class="text-base text-gray-600">
                                 <span class="pr-1"><i class="fas fa-book"></i></span>
                                 <span class="">Address</span>
@@ -686,7 +686,7 @@
                                 <span class="">Wishlist</span>
                             </a>
                         </div>
-                        <div class="mr-6 account__menu">
+                        <div class="mr-6 account__menu active">
                             <a href="trxhistory.html" class="text-base text-gray-600">
                                 <span class="pr-1"><i class="fas fa-wallet"></i></span>
                                 <span class="">Transactions</span>
@@ -706,42 +706,169 @@
                         </div>
                     </div>
 
-                    <!-- Profile Info  -->
-                    <section class="profile my-7">
+                    <!-- OrderHistory  -->
+                    <section class="orderhistory my-7">
                         <div class="account__title">
-                            <legend>YOUR DELIVERY ADDRESS</legend>
+                            <legend>Your Transactions History</legend>
                         </div>
-                        <div class="checkout__deliver--address" style="padding-left: 0px">
-                            <div class="checkout__deliver--items">
-                                <div class="checkout__deliver--item active">
-                                    <div class="flex items-center justify-between">
-                                        <h3>Khulna</h3>
-                                        <a href="#"><i class="far fa-edit fa-xs"></i></a>
-                                    </div>
-                                    <p>
-                                        Hamidur Rohoman Stadium, Jhenaidah Sadar , Jhenaidah, Khulna
-                                    </p>
-                                    <p class="pt-2">Mobile: 01875865301</p>
-                                </div>
-                                <div class="checkout__deliver--item">
-                                    <div class="flex items-center justify-between">
-                                        <h3>Dhaka</h3>
-                                        <a href="#"><i class="far fa-edit fa-xs"></i></a>
-                                    </div>
-                                    <p>
-                                        BDR camp er pichon gate, near BGB school, Professor para,
-                                        Dhaka
-                                    </p>
-                                    <p class="pt-2">Mobile: 01875865301</p>
-                                </div>
-                                <div class="bg-gray-100 checkout__deliver--item">
-                                    <div class="flex flex-col items-center justify-center h-full">
-                                        <a href="#"><i class="fas fa-plus"></i></a>
-                                        <h5 class="pt-3">Add Address</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <table class="min-w-full table-auto">
+                            <thead class="justify-between">
+                                <tr class="bg-gray-200">
+                                    <th class="hidden px-6 py-2 display-revert">
+                                        <span class="text-sm text-gray-800 capitalize">DATE</span>
+                                    </th>
+                                    <th class="px-6 py-2 text-left">
+                                        <span class="text-sm text-gray-800 capitalize"
+                                            >PRODUCT</span
+                                        >
+                                    </th>
+                                    <th class="hidden px-6 py-2 display-revert">
+                                        <span class="text-sm text-gray-800 capitalize">STATUS</span>
+                                    </th>
+
+                                    <th class="px-6 py-2">
+                                        <span class="text-sm text-gray-800 capitalize">AMOUNT</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-gray-200">
+                                <tr class="bg-white border-2 border-gray-200">
+                                    <td
+                                        class="items-center justify-center hidden px-3 py-2 md:flex"
+                                    >
+                                        <span
+                                            class="inline-block mb-2 text-base text-left text-gray-800  md:mb-0"
+                                            >13-02-2022</span
+                                        >
+                                    </td>
+                                    <td class="px-1 py-1 md:px-3 md:py-2">
+                                        <a
+                                            href="#"
+                                            class="inline-block mb-2 text-base text-left text-gray-800  md:mb-0"
+                                            >AMD Ryzen 3 3300X 4 Core 8 Thread AM4 Processor</a
+                                        >
+                                        <!-- For Mobile Start -->
+                                        <h3 class="mb-1 text-gray-800 md:hidden">
+                                            Date: &nbsp;
+                                            <span
+                                                class="inline-block mb-2 text-base font-semibold text-left text-gray-800  md:mb-0"
+                                                >13-02-2022</span
+                                            >
+                                        </h3>
+
+                                        <h3 class="mb-1 text-gray-800 md:hidden">
+                                            Status: &nbsp;
+                                            <span
+                                                class="text-base font-semibold text-left text-green-500 "
+                                                >Confirmed</span
+                                            >
+                                        </h3>
+                                        <!-- For Mobile End -->
+                                    </td>
+                                    <td class="hidden px-3 py-2 text-center display-revert">
+                                        <span class="text-base text-left text-green-500"
+                                            >Confirmed</span
+                                        >
+                                    </td>
+
+                                    <td class="px-3 py-2 text-center display-revert">
+                                        <span class="text-base text-left text-gray-800"
+                                            >14,400৳</span
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="bg-white border-2 border-gray-200">
+                                    <td
+                                        class="items-center justify-center hidden px-3 py-2 md:flex"
+                                    >
+                                        <span
+                                            class="inline-block mb-2 text-base text-left text-gray-800  md:mb-0"
+                                            >17-02-2022</span
+                                        >
+                                    </td>
+                                    <td class="px-1 py-1 md:px-3 md:py-2">
+                                        <a
+                                            href="#"
+                                            class="inline-block mb-2 text-base text-left text-gray-800  md:mb-0"
+                                            >Dell D1918H 18.5 Inch LED Monitor (VGA, HDMI)</a
+                                        >
+                                        <!-- For Mobile Start -->
+                                        <h3 class="mb-1 text-gray-800 md:hidden">
+                                            Date: &nbsp;
+                                            <span
+                                                class="inline-block mb-2 text-base font-semibold text-left text-gray-800  md:mb-0"
+                                                >13-02-2022</span
+                                            >
+                                        </h3>
+
+                                        <h3 class="mb-1 text-gray-800 md:hidden">
+                                            Status: &nbsp;
+                                            <span
+                                                class="text-base font-semibold text-left text-green-500 "
+                                                >Confirmed</span
+                                            >
+                                        </h3>
+                                        <!-- For Mobile End -->
+                                    </td>
+                                    <td class="hidden px-3 py-2 text-center display-revert">
+                                        <span class="text-base text-left text-red-500"
+                                            >Rejected</span
+                                        >
+                                    </td>
+
+                                    <td class="px-3 py-2 text-center display-revert">
+                                        <span class="text-base text-left text-gray-800"
+                                            >58,100৳</span
+                                        >
+                                    </td>
+                                </tr>
+                                <tr class="bg-white border-2 border-gray-200">
+                                    <td
+                                        class="items-center justify-center hidden px-3 py-2 md:flex"
+                                    >
+                                        <span
+                                            class="inline-block mb-2 text-base text-left text-gray-800  md:mb-0"
+                                            >08-02-2022</span
+                                        >
+                                    </td>
+                                    <td class="px-1 py-1 md:px-3 md:py-2">
+                                        <a
+                                            href="#"
+                                            class="inline-block mb-2 text-base text-left text-gray-800  md:mb-0"
+                                            >MaxGreen MGO-W3KS 3KVA Standard Backup Online UPS</a
+                                        >
+                                        <!-- For Mobile Start -->
+                                        <h3 class="mb-1 text-gray-800 md:hidden">
+                                            Date: &nbsp;
+                                            <span
+                                                class="inline-block mb-2 text-base font-semibold text-left text-gray-800  md:mb-0"
+                                                >13-02-2022</span
+                                            >
+                                        </h3>
+
+                                        <h3 class="mb-1 text-gray-800 md:hidden">
+                                            Status: &nbsp;
+                                            <span
+                                                class="text-base font-semibold text-left text-green-500 "
+                                                >Confirmed</span
+                                            >
+                                        </h3>
+                                        <!-- For Mobile End -->
+                                    </td>
+                                    <td class="hidden px-3 py-2 text-center display-revert">
+                                        <span class="text-base text-left text-green-500"
+                                            >Confirmed</span
+                                        >
+                                    </td>
+
+                                    <td class="px-3 py-2 text-center display-revert">
+                                        <span class="text-base text-left text-gray-800"
+                                            >87,500৳</span
+                                        >
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </section>
                 </div>
             </div>

@@ -15,4 +15,11 @@
             }
         }
     }
+    &--title {
+        h2 {
+            &::after {
+                background-color: #fff !important;
+            }
+        }
+    }
 }

@@ -784,15 +784,26 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Products -->
-                    <section class="w-full pl-0 md:w-10/12 md:pl-4 product-panel">
-                        <div class="flex flex-col product-panel__container">
-                            <div class="w-full product-panel__title">
-                                <h2
-                                    class="pb-2 mb-2 text-xl font-bold text-gray-800 border-b border-gray-300 "
-                                >
+                    <!-- Main Products -->
+                    <section class="w-full pl-0 mt-4 md:mt-0 md:w-10/12 md:pl-4 product-panel">
+                        <div
+                            class="flex flex-col mb-1 border-b border-gray-300  product-panel__container"
+                        >
+                            <div
+                                class="flex justify-between w-full border-b border-gray-300  productlist--title product-panel__title"
+                            >
+                                <h2 class="pb-2 mb-2 text-xl font-bold text-gray-800">
                                     Product List
                                 </h2>
+                                <div class="select__container">
+                                    <div class="select__selectbox">
+                                        <select name="" id="">
+                                            <option value="">Default</option>
+                                            <option value="">New Products</option>
+                                            <option value="">Old Products</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Product Items -->
                             <div class="product__items-wrapper">
@@ -2073,6 +2084,31 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Pagination -->
+                        <div class="bg-gray-100 productlist__bottom">
+                            <div
+                                class="flex flex-col justify-between px-3 py-2 rounded-md  md:flex-row"
+                            >
+                                <div class="mb-2 pagination md:mb-0">
+                                    <a href=""><i class="fas fa-chevron-left"></i></a>
+                                    <a href="">1</a>
+                                    <a href="">2</a>
+                                    <a href="">3</a>
+                                    <a href="">4</a>
+                                    <a href="">5</a>
+                                    <a href="">6</a>
+                                    <a href=""><i class="fas fa-chevron-right"></i></a>
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="">
+                                    <p
+                                        class="text-sm tracking-wide text-right text-gray-700  md:text-base"
+                                    >
+                                        Showing 1 to 20 of 101 (6 Pages)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </section>
                 </div>
             </div>
@@ -2234,7 +2270,7 @@
                 </div>
 
                 <div
-                    class="flex flex-col items-center justify-between pt-6 pb-2 mt-1 border-t border-gray-300 md:mt-5 md:flex-row footer__bottom"
+                    class="flex flex-col items-center justify-between pt-6 pb-2 mt-1 border-t border-gray-300  md:mt-5 md:flex-row footer__bottom"
                 >
                     <div class="mb-3 footer__copyright md:mb-0">
                         <p>
@@ -2251,7 +2287,7 @@
             </div>
         </footer>
         <!-- ******** Footer END ******** -->
-        
+
         <!-- Main Js -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="./dist/js/main.js"></script>
